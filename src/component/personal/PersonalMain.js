@@ -1,7 +1,13 @@
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
+
 export default function PersonalMain(){
     return(
-    <section className="section-intro">
+    <section className="section-intro" onclick={btnMenuDown}>
         <div className="content">
             <h2>PERSONAL INFORMATION</h2>
             <p>Home / <span>Personal Information</span></p>

@@ -7,9 +7,15 @@ import blog4 from '../../assets/images/blog-4.png';
 
 import founder from '../../assets/images/founder.png'
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
+
 export default function BlogDetailHome(){
     return(
-    <section class="blog-detail">
+    <section class="blog-detail" onclick={btnMenuDown}>
         <div class="content">
             <div class="left">
                 <div class="image-head">

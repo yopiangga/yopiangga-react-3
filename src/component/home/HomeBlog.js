@@ -3,11 +3,16 @@ import blog1 from '../../assets/images/blog-1.png';
 import blog2 from '../../assets/images/blog-2.png';
 import blog3 from '../../assets/images/blog-3.png';
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
 
 function HomeBlog(){
     return (
 
-    <section className="home-blog">
+    <section className="home-blog" onclick={btnMenuDown}>
         <div className="content">
             <div className="title">
                 <h2>FROM OUR BLOG</h2>

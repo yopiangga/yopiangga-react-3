@@ -1,8 +1,12 @@
+import $ from 'jquery';
 
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
 
 function Subscribe(){
     return(
-        <section className="subscribe">
+        <section className="subscribe" onClick={btnMenuDown}>
             <div className="content">
                 <div className="title">
                     <h2>Subscribe To Our Newsletter</h2>

@@ -1,9 +1,14 @@
 import { FiFacebook, FiInstagram, FiTwitter, FiLinkedin } from "react-icons/fi";
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
 
 export default function ContactForm(){
     return(
-    <section className="contact-form">
+    <section className="contact-form" onclick={btnMenuDown}>
         <div className="content">
             <div className="description">
                 <div className="address">

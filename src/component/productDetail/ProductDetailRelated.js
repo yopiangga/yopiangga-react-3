@@ -5,9 +5,15 @@ import orange from '../../assets/images/product/orange.png';
 import tomato from '../../assets/images/product/tomato.png';
 import garlic2 from '../../assets/images/product/garlic2.png';
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
+
 export default function ProductDetailRelated(){
     return(
-    <section className="product-detail-related">
+    <section className="product-detail-related" onclick={btnMenuDown}>
         <div className="content">
             <div className="content-head">
                 <h2>Related Poducts</h2>

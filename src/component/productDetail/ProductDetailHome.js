@@ -6,9 +6,15 @@ import productDetail3 from '../../assets/images/product-detail-3.png';
 import productDetail4 from '../../assets/images/product-detail-4.png';
 import productDetail5 from '../../assets/images/product-detail-5.png';
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
+
 export default function ProductDetailHome(){
     return(
-    <section className="product-detail-home">
+    <section className="product-detail-home" onClick={btnMenuDown}>
         <div className="content">
             <div className="left">
                 <div className="big-img">

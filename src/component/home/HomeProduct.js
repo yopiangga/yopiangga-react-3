@@ -10,9 +10,15 @@ import garlic2 from '../../assets/images/product/garlic2.png';
 
 import { FiSearch, FiShoppingCart } from 'react-icons/fi';
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
+
 function HomeProduct(){
     return (
-        <section className="home-product">
+        <section className="home-product" onclick={btnMenuDown}>
         <div className="content">
             <div className="title">
                 <h2>NEW PRODUCTS</h2>

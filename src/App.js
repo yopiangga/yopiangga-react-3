@@ -15,7 +15,8 @@ import ProductDetail from './pages/ProductDetail';
 import BlogDetail from './pages/BlogDetail';
 import AuthMain from './component/auth/AuthMain';
 
-
+import $ from 'jquery';
+  
 function App() {
   return (
     <BrowserRouter>

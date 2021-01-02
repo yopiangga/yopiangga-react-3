@@ -6,10 +6,15 @@ import photo4 from '../../assets/images/photo-4.png';
 
 import { FiFacebook, FiInstagram, FiTwitter, FiLinkedin } from "react-icons/fi";
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
 
 function Footer(){
     return(
-    <section className="footer">
+    <section className="footer" onClick={btnMenuDown}>
         <div className="content">
             <div className="body">
                 <div className="contact">

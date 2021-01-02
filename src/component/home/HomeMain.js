@@ -1,11 +1,17 @@
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
 
 function HomeMain() {
   return (
-    <section className="home-intro">
+    <section className="home-intro" onClick={btnMenuDown}>
         <div className="btn-left">
             <div className="icon-box">
-                <i data-feather="chevron-left"></i>
+                <FiChevronLeft size="24px" />
             </div>
         </div>
         <div className="slide slide-1 active">
@@ -32,7 +38,7 @@ function HomeMain() {
         </div>
         <div className="btn-right">
             <div className="icon-box">
-                <i data-feather="chevron-right"></i>
+                <FiChevronRight size="24px" />
             </div>
         </div>
     </section>

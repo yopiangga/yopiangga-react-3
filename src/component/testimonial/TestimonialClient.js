@@ -1,8 +1,14 @@
 import { FiFacebook, FiInstagram, FiTwitter, FiLinkedin } from "react-icons/fi";
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
+
 export default function TestimonialClient(){
     return(
-    <section className="testimonials-client">
+    <section className="testimonials-client" onclick={btnMenuDown}>
         <div className="content">
             <div className="title">
                 <h2>The client said</h2>

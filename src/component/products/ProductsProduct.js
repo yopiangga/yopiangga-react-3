@@ -14,9 +14,108 @@ import tomato from '../../assets/images/product/tomato.png';
 
 import { FiSearch, FiShoppingCart } from 'react-icons/fi';
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
+
+$(document).ready(function(){
+    $('.products-product .content .title .button .btn-all').click(function(){
+        $('.products-product .content .body .fruits').removeClass('unActive');
+        $('.products-product .content .body .vegetables').removeClass('unActive');
+        $('.products-product .content .body .garlics').removeClass('unActive');
+        $('.products-product .content .body .seafoods').removeClass('unActive');
+        $('.products-product .content .body .meets').removeClass('unActive');
+
+        $('.products-product .content .title .button .btn-all').addClass('active');
+        $('.products-product .content .title .button .btn-fruits').removeClass('active');
+        $('.products-product .content .title .button .btn-vegetables').removeClass('active');
+        $('.products-product .content .title .button .btn-garlics').removeClass('active');
+        $('.products-product .content .title .button .btn-seafoods').removeClass('active');
+        $('.products-product .content .title .button .btn-meets').removeClass('active');
+    });
+
+    $('.products-product .content .title .button .btn-fruits').click(function(){
+        $('.products-product .content .body .fruits').removeClass('unActive');
+        $('.products-product .content .body .vegetables').addClass('unActive');
+        $('.products-product .content .body .garlics').addClass('unActive');
+        $('.products-product .content .body .seafoods').addClass('unActive');
+        $('.products-product .content .body .meets').addClass('unActive');
+
+        $('.products-product .content .title .button .btn-all').removeClass('active');
+        $('.products-product .content .title .button .btn-fruits').addClass('active');
+        $('.products-product .content .title .button .btn-vegetables').removeClass('active');
+        $('.products-product .content .title .button .btn-garlics').removeClass('active');
+        $('.products-product .content .title .button .btn-seafoods').removeClass('active');
+        $('.products-product .content .title .button .btn-meets').removeClass('active');
+    });
+
+    $('.products-product .content .title .button .btn-vegetables').click(function(){
+        $('.products-product .content .body .fruits').addClass('unActive');
+        $('.products-product .content .body .vegetables').removeClass('unActive');
+        $('.products-product .content .body .garlics').addClass('unActive');
+        $('.products-product .content .body .seafoods').addClass('unActive');
+        $('.products-product .content .body .meets').addClass('unActive');
+
+        $('.products-product .content .title .button .btn-all').removeClass('active');
+        $('.products-product .content .title .button .btn-fruits').removeClass('active');
+        $('.products-product .content .title .button .btn-vegetables').addClass('active');
+        $('.products-product .content .title .button .btn-garlics').removeClass('active');
+        $('.products-product .content .title .button .btn-seafoods').removeClass('active');
+        $('.products-product .content .title .button .btn-meets').removeClass('active');
+    });
+
+    $('.products-product .content .title .button .btn-garlics').click(function(){
+        $('.products-product .content .body .fruits').addClass('unActive');
+        $('.products-product .content .body .vegetables').addClass('unActive');
+        $('.products-product .content .body .garlics').removeClass('unActive');
+        $('.products-product .content .body .seafoods').addClass('unActive');
+        $('.products-product .content .body .meets').addClass('unActive');
+
+        $('.products-product .content .title .button .btn-all').removeClass('active');
+        $('.products-product .content .title .button .btn-fruits').removeClass('active');
+        $('.products-product .content .title .button .btn-vegetables').removeClass('active');
+        $('.products-product .content .title .button .btn-garlics').addClass('active');
+        $('.products-product .content .title .button .btn-seafoods').removeClass('active');
+        $('.products-product .content .title .button .btn-meets').removeClass('active');
+    });
+
+    $('.products-product .content .title .button .btn-seafoods').click(function(){
+        $('.products-product .content .body .fruits').addClass('unActive');
+        $('.products-product .content .body .vegetables').addClass('unActive');
+        $('.products-product .content .body .garlics').addClass('unActive');
+        $('.products-product .content .body .seafoods').removeClass('unActive');
+        $('.products-product .content .body .meets').addClass('unActive');
+
+        $('.products-product .content .title .button .btn-all').removeClass('active');
+        $('.products-product .content .title .button .btn-fruits').removeClass('active');
+        $('.products-product .content .title .button .btn-vegetables').removeClass('active');
+        $('.products-product .content .title .button .btn-garlics').removeClass('active');
+        $('.products-product .content .title .button .btn-seafoods').addClass('active');
+        $('.products-product .content .title .button .btn-meets').removeClass('active');
+    });
+
+    $('.products-product .content .title .button .btn-meets').click(function(){
+        $('.products-product .content .body .fruits').addClass('unActive');
+        $('.products-product .content .body .vegetables').addClass('unActive');
+        $('.products-product .content .body .garlics').addClass('unActive');
+        $('.products-product .content .body .seafoods').addClass('unActive');
+        $('.products-product .content .body .meets').removeClass('unActive');
+
+        $('.products-product .content .title .button .btn-all').removeClass('active');
+        $('.products-product .content .title .button .btn-fruits').removeClass('active');
+        $('.products-product .content .title .button .btn-vegetables').removeClass('active');
+        $('.products-product .content .title .button .btn-garlics').removeClass('active');
+        $('.products-product .content .title .button .btn-seafoods').removeClass('active');
+        $('.products-product .content .title .button .btn-meets').addClass('active');
+    });
+});
+
 export default function ProductsProduct(){
+
     return(
-    <section className="products-product">
+    <section className="products-product" onClick={btnMenuDown}>
         <div className="content">
             <div className="title">
                 <h2>NEW PRODUCTS</h2>

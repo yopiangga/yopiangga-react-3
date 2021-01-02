@@ -1,8 +1,13 @@
 import founder from '../../assets/images/founder.png';
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
 
 export default function AboutClient(){
     return(
-        <section className="about-client">
+        <section className="about-client" onClick={btnMenuDown}>
         <div className="content">
             <div className="title">
                 <h2>We love our client</h2>

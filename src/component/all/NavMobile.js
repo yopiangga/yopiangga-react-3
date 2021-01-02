@@ -1,22 +1,29 @@
 
 
 import { FiMenu, FiSearch, FiUser, FiShoppingCart} from 'react-icons/fi';
+import {NavLink} from 'react-router-dom';
 
-function NavMobile() {
+import $ from 'jquery';
+
+function btnMenu(){
+    $('nav .content .menu').toggleClass('active');
+}
+
+function NavMobile() { 
   return (
 
     <nav className="navbar mobile">
         <div className="content">
-            <div className="btn-menu">
+            <div className="btn-menu" onClick={btnMenu}>
                 <FiMenu size="24px" color="#534741"/>    
             </div>
             <div className="menu">
                 <ul>
-                    <li><a href="/" className="active">HOME</a></li>
-                    <li><a href="/about">ABOUT US</a></li>
-                    <li><a href="/products">PRODUCT</a></li>
-                    <li><a href="/testimonial">TESTIMONIALS</a></li>
-                    <li><a href="/contact">CONTACT</a></li>
+                <li><NavLink exact to="/" className="" activeClassName="active">HOME</NavLink></li>
+                    <li><NavLink exact to="/about" className="" activeClassName="active">ABOUT US</NavLink></li>
+                    <li><NavLink exact to="/products" className="" activeClassName="active">PRODUCT</NavLink></li>
+                    <li><NavLink exact to="/testimonial" className="" activeClassName="active">TESTIMONIALS</NavLink></li>
+                    <li><NavLink exact to="/contact" className="" activeClassName="active">CONTACT</NavLink></li>
                 </ul>
             </div>
             <div className="icon">

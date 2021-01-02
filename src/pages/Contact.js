@@ -8,7 +8,7 @@ import ContactForm from '../component/contact/ContactForm';
 import Subscribe from '../component/all/Subscribe';
 import Footer from '../component/all/Footer';
 
-
+    
 export default function Contact(){
     return(
     <body>

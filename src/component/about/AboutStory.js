@@ -1,8 +1,13 @@
 import founder from '../../assets/images/founder.png';
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
 
 export default function AboutStory(){
     return (
-        <section className="about-story">
+        <section className="about-story" onClick={btnMenuDown}>
         <div className="content">
             <div className="card-story">
                 <div className="frame">

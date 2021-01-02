@@ -6,9 +6,15 @@ import seafoods from '../../assets/images/seafood.png';
 import garlics from '../../assets/images/garlic.png';
 import meets from '../../assets/images/meet.png';
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
+
 function HomeCategory(){
     return (
-            <section className="home-category">
+            <section className="home-category" onClick={btnMenuDown}>
             <div className="content">
                 <div className="title">
                     <h2>WELCOME TO PETIKDUA</h2>

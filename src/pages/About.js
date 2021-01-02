@@ -10,6 +10,8 @@ import Subscribe from '../component/all/Subscribe';
 import Footer from '../component/all/Footer';
 
 
+
+
 export default function About(){
   return (
     <body>

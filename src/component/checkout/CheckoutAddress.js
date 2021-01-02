@@ -1,7 +1,13 @@
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
+
 export default function CheckoutAddress(){
     return(
-    <section className="checkout-address">
+    <section className="checkout-address" onClick={btnMenuDown}>
         <div className="content">
             <form action="">
                 <div className="billing">

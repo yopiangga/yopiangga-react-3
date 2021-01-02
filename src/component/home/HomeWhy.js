@@ -3,9 +3,15 @@ import leaves1 from '../../assets/images/leaves-01.png';
 import leaves2 from '../../assets/images/leaves-02.png';
 import fruitLemon from '../../assets/images/fruit-lemon.png';
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
+
 function HomeWhy(){
     return(
-    <section className="home-why">
+    <section className="home-why" onClick={btnMenuDown}>
         <div className="bg-left">
             <img src={leaves1} alt=""/>
         </div>

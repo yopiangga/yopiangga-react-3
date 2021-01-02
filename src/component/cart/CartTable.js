@@ -4,9 +4,15 @@ import meet from '../../assets/images/product/meet.png';
 import seafood1 from '../../assets/images/product/seafood1.png';
 import orange from '../../assets/images/product/orange.png';
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
+
 export default function CartTable(){
     return(
-    <section className="table-cart">
+    <section className="table-cart" onClick={btnMenuDown}>
         <div className="content">
             <table>
                 <tr className="tr-head">

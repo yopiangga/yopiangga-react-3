@@ -11,6 +11,8 @@ import { FiSearch, FiUser, FiShoppingCart } from 'react-icons/fi';
 
 import logo from '../../assets/images/logo.png';
 
+import {NavLink} from 'react-router-dom';
+
 
 function Nav() {
     return (
@@ -23,20 +25,22 @@ function Nav() {
             </div>
             <div className="menu">
                 <ul>
-                    <li><a href="/" className="active">HOME</a></li>
-                    <li><a href="/about">ABOUT US</a></li>
-                    <li><a href="/products">PRODUCT</a></li>
-                    <li><a href="/testimonial">TESTIMONIALS</a></li>
-                    <li><a href="/contact">CONTACT</a></li>
+                    <li><NavLink exact to="/" className="" activeClassName="active">HOME</NavLink></li>
+                    <li><NavLink exact to="/about" className="" activeClassName="active">ABOUT US</NavLink></li>
+                    <li><NavLink exact to="/products" className="" activeClassName="active">PRODUCT</NavLink></li>
+                    <li><NavLink exact to="/testimonial" className="" activeClassName="active">TESTIMONIALS</NavLink></li>
+                    <li><NavLink exact to="/contact" className="" activeClassName="active">CONTACT</NavLink></li>
                 </ul>
             </div>
             <div className="icon">
                 <div className="search">
-                    <FiSearch size="24px" color="#534741"/>                 
+                    <FiSearch size="24px" color="#534741" />                 
                 </div>
                 
                 <div className="cart" onclick="window.location.href='cart.html'">
-                    <FiShoppingCart size="24px" color="#534741"/>
+                    <NavLink exact to="/cart" className="" activeClassName="active">
+                        <FiShoppingCart size="24px" color="#534741"/>
+                    </NavLink>
                     <div className="notif">
                         <p>5</p>
                     </div>

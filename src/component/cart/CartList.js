@@ -1,7 +1,13 @@
 
+import $ from 'jquery';
+
+function btnMenuDown(){
+    $('nav .content .menu').removeClass('active');
+}
+
 export default function CartList(){
     return(
-    <section className="list-cart">
+    <section className="list-cart" onClick={btnMenuDown}>
         <div className="content">
             <div className="content-head">
                 <h2>Cart totals</h2>
