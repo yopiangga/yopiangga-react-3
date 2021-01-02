@@ -1,14 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import NavSearch from '../component/all/NavSearch';
 import Nav from '../component/all/Nav';
 import NavMobile from '../component/all/NavMobile';
-import HomeMain from '../component/home/HomeMain';
-import HomeCategory from '../component/home/HomeCategory';
-import HomeWhy from '../component/home/HomeWhy';
-import HomeProduct from '../component/home/HomeProduct';
-import HomeBlog from '../component/home/HomeBlog';
+import AboutMain from '../component/about/AboutMain';
+import AboutStory from '../component/about/AboutStory';
+import AboutClient from '../component/about/AboutClient';
 import Subscribe from '../component/all/Subscribe';
 import Footer from '../component/all/Footer';
 
@@ -19,11 +16,9 @@ export default function About(){
        <NavSearch />
        <Nav />
        <NavMobile />
-
-       <HomeCategory />
-       <HomeWhy />
-       <HomeProduct />
-       <HomeBlog />
+       <AboutMain />
+       <AboutStory />
+       <AboutClient />
        <Subscribe />
        <Footer />
     </body>
