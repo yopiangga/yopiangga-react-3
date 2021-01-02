@@ -12,11 +12,11 @@ function NavMobile() {
             </div>
             <div className="menu">
                 <ul>
-                    <li><a href="dashboard.html" className="active">HOME</a></li>
-                    <li><a href="about-us.html">ABOUT US</a></li>
-                    <li><a href="products.html">PRODUCT</a></li>
-                    <li><a href="testimonials.html">TESTIMONIALS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="/" className="active">HOME</a></li>
+                    <li><a href="/about">ABOUT US</a></li>
+                    <li><a href="/products">PRODUCT</a></li>
+                    <li><a href="/testimonial">TESTIMONIALS</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
                 </ul>
             </div>
             <div className="icon">
