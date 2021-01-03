@@ -9,6 +9,11 @@ function btnMenu(){
     $('nav .content .menu').toggleClass('active');
 }
 
+function searchActive(){
+    $('.nav-search').toggleClass('active');
+    $('.navbar').toggleClass('search-active');
+}
+
 function NavMobile() { 
   return (
 
@@ -27,20 +32,24 @@ function NavMobile() {
                 </ul>
             </div>
             <div className="icon">
-                <div className="search">
+                <div className="search" onClick={searchActive}>
                     <FiSearch size="24px" color="#534741"/>    
                 </div>
                 
-                <div className="cart" onclick="window.location.href='cart.html'">
-                    <FiShoppingCart size="24px" color="#534741"/>    
-                    <div className="notif">
-                        <p>5</p>
+                <NavLink exact to="/cart" className="" activeClassName="active">
+                    <div className="cart">
+                            <FiShoppingCart size="24px" color="#534741"/>
+                        <div className="notif">
+                            <p>5</p>
+                        </div>
                     </div>
-                </div>
+                </NavLink>
 
-                <div className="user" onclick="window.location.href='personal-information.html'">
-                    <FiUser size="24px" color="#534741"/>    
-                </div>
+                <NavLink exact to="/personal" className="" activeClassName="active">
+                    <div className="user">
+                        <FiUser size="24px" color="#534741"/>
+                    </div>
+                </NavLink>   
 
             </div>
         </div>

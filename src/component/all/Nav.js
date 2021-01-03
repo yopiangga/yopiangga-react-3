@@ -10,9 +10,14 @@ import '../../assets/css/animate.min.css';
 import { FiSearch, FiUser, FiShoppingCart } from 'react-icons/fi';
 
 import logo from '../../assets/images/logo.png';
+import $ from 'jquery';
 
 import {NavLink} from 'react-router-dom';
 
+function searchActive(){
+    $('.nav-search').toggleClass('active');
+    $('.navbar').toggleClass('search-active');
+}
 
 function Nav() {
     return (
@@ -33,22 +38,24 @@ function Nav() {
                 </ul>
             </div>
             <div className="icon">
-                <div className="search">
+                <div className="search" onClick={searchActive}>
                     <FiSearch size="24px" color="#534741" />                 
                 </div>
                 
-                <div className="cart" onclick="window.location.href='cart.html'">
-                    <NavLink exact to="/cart" className="" activeClassName="active">
-                        <FiShoppingCart size="24px" color="#534741"/>
-                    </NavLink>
-                    <div className="notif">
-                        <p>5</p>
+                <NavLink exact to="/cart" className="" activeClassName="active">
+                    <div className="cart">
+                            <FiShoppingCart size="24px" color="#534741"/>
+                        <div className="notif">
+                            <p>5</p>
+                        </div>
                     </div>
-                </div>
+                </NavLink>
 
-                <div className="user" onclick="window.location.href='personal-information.html'">
-                    <FiUser size="24px" color="#534741"/>
-                </div>
+                <NavLink exact to="/personal" className="" activeClassName="active">
+                    <div className="user">
+                        <FiUser size="24px" color="#534741"/>
+                    </div>
+                </NavLink>     
                 
             </div>
         </div>

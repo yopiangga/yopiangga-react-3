@@ -4,9 +4,12 @@ import blog2 from '../../assets/images/blog-2.png';
 import blog3 from '../../assets/images/blog-3.png';
 
 import $ from 'jquery';
+import {NavLink} from 'react-router-dom';
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');
+    $('.nav-search').removeClass('active');
+    $('.navbar').removeClass('search-active');
 }
 
 function HomeBlog(){
@@ -20,7 +23,8 @@ function HomeBlog(){
             </div>
             <div className="body">
                 <div className="blog-left">
-                    <div className="card-blog" onclick="window.location.href='blog-detail.html'">
+                    <NavLink exact to="/blog-detail">
+                    <div className="card-blog" >
                         <div className="blog-img">
                             <div className="frame"></div>
                             <img src={blog1} alt="" />
@@ -31,11 +35,13 @@ function HomeBlog(){
                             <p>Improving your diet lowers your risk for heart…</p>
                             <h4><a href="">READ MORE</a></h4>
                         </div>
-                    </div>
+                    </div>      
+                    </NavLink>
                 </div>
 
                 <div className="blog-right">
-                    <div className="card-blog" onclick="window.location.href='blog-detail.html'">
+                    <NavLink exact to="/blog-detail">
+                    <div className="card-blog" >
                         <div className="blog-img">
                             <img src={blog2} alt="" />
                         </div>
@@ -45,8 +51,11 @@ function HomeBlog(){
                             <p>Improving your diet lowers your risk for heart…</p>
                             <h4><a href="">READ MORE</a></h4>
                         </div>
-                    </div>
-                    <div className="card-blog" onclick="window.location.href='blog-detail.html'">
+                    </div>      
+                    </NavLink>
+
+                    <NavLink exact to="/blog-detail">
+                    <div className="card-blog" >
                         <div className="blog-img">
                             <img src={blog3} alt="" />
                         </div>
@@ -56,7 +65,8 @@ function HomeBlog(){
                             <p>Improving your diet lowers your risk for heart…</p>
                             <h4><a href="">READ MORE</a></h4>
                         </div>
-                    </div>
+                    </div>      
+                    </NavLink>
                 </div>
             </div>
         </div>

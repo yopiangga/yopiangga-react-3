@@ -2,6 +2,8 @@ import $ from 'jquery';
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');
+    $('.nav-search').removeClass('active');
+    $('.navbar').removeClass('search-active');
 }
 
 function Subscribe(){

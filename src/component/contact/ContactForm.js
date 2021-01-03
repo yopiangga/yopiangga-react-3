@@ -4,6 +4,24 @@ import $ from 'jquery';
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');
+    $('.nav-search').removeClass('active');
+    $('.navbar').removeClass('search-active');
+}
+
+function meFacebook(){
+    window.location.href='https://www.facebook.com/alfian.prisma.yopiangga';
+}
+
+function meInstagram(){
+    window.location.href='https://www.instagram.com/alfian_prisma_yopiangga/';
+}
+
+function meTwitter(){
+    window.location.href='https://twitter.com/AlfianPrisma';
+}
+
+function meLinkedin(){
+    window.location.href='https://www.linkedin.com/in/alfian-prisma-yopiangga-a954251a8/';
 }
 
 export default function ContactForm(){
@@ -26,10 +44,10 @@ export default function ContactForm(){
                     <p>yopiangga@petikdua.store</p>
                 </div>
                 <div className="media-sosial">
-                    <FiFacebook color="#333333" size="24px" onclick="window.location.href='https://www.facebook.com/alfian.prisma.yopiangga'"></FiFacebook>
-                    <FiInstagram color="#333333" size="24px" onclick="window.location.href='https://www.instagram.com/alfian_prisma_yopiangga/'"></FiInstagram>
-                    <FiTwitter color="#333333" size="24px" onclick="window.location.href='https://twitter.com/AlfianPrisma'"></FiTwitter>
-                    <FiLinkedin color="#333333" size="24px" onclick="window.location.href='https://www.linkedin.com/in/alfian-prisma-yopiangga-a954251a8/'"></FiLinkedin>
+                    <FiFacebook color="#333333" size="24px" onClick={meFacebook}></FiFacebook>
+                    <FiInstagram color="#333333" size="24px" onClick={meInstagram}></FiInstagram>
+                    <FiTwitter color="#333333" size="24px" onClick={meTwitter}></FiTwitter>
+                    <FiLinkedin color="#333333" size="24px" onClick={meLinkedin}></FiLinkedin>
                 </div>
             </div>
             <div className="form">

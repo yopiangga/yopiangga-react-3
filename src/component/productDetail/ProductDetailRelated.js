@@ -6,9 +6,19 @@ import tomato from '../../assets/images/product/tomato.png';
 import garlic2 from '../../assets/images/product/garlic2.png';
 
 import $ from 'jquery';
+import {NavLink} from 'react-router-dom';
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');
+    $('.nav-search').removeClass('active');
+    $('.navbar').removeClass('search-active');
+}
+
+function addShopping(){
+    $('nav .content .icon .cart .notif').addClass('animate__animated animate__bounce').delay(500);
+    setTimeout(function(){
+        $('nav .content .icon .cart .notif').removeClass('animate__animated animate__bounce');
+    }, 1000);
 }
 
 export default function ProductDetailRelated(){
@@ -23,11 +33,14 @@ export default function ProductDetailRelated(){
                     <div className="produk-img">
                         <img src={seafood2} alt="" />
                         <div className="menu">
-                            <div className="circle" onclick="window.location.href='product-detail.html'">
-                                <FiSearch size="24px" color="#ffffff" /> 
-                            </div>
-                            <div className="circle add-shopping">
-                                <FiShoppingCart size="24px" color="#ffffff" /> 
+                            <NavLink exact to="/product-detail">
+                                <div className="circle">
+                                    <FiSearch color="white" size="24px"/> 
+                                </div>
+                            </NavLink>
+                            
+                            <div className="circle add-shopping" onClick={addShopping}>
+                                <FiShoppingCart color="white" size="24px"/>
                             </div>
                         </div>
                     </div>
@@ -41,11 +54,14 @@ export default function ProductDetailRelated(){
                     <div className="produk-img">
                         <img src={orange} alt="" />
                         <div className="menu">
-                            <div className="circle" onclick="window.location.href='product-detail.html'">
-                                <FiSearch size="24px" color="#ffffff" /> 
-                            </div>
-                            <div className="circle add-shopping">
-                                <FiShoppingCart size="24px" color="#ffffff" /> 
+                            <NavLink exact to="/product-detail">
+                                <div className="circle">
+                                    <FiSearch color="white" size="24px"/> 
+                                </div>
+                            </NavLink>
+                            
+                            <div className="circle add-shopping" onClick={addShopping}>
+                                <FiShoppingCart color="white" size="24px"/>
                             </div>
                         </div>
                     </div>
@@ -59,11 +75,14 @@ export default function ProductDetailRelated(){
                     <div className="produk-img">
                         <img src={tomato} alt="" />
                         <div className="menu">
-                            <div className="circle" onclick="window.location.href='product-detail.html'">
-                                <FiSearch size="24px" color="#ffffff" /> 
-                            </div>
-                            <div className="circle add-shopping">
-                                <FiShoppingCart size="24px" color="#ffffff" /> 
+                            <NavLink exact to="/product-detail">
+                                <div className="circle">
+                                    <FiSearch color="white" size="24px"/> 
+                                </div>
+                            </NavLink>
+                            
+                            <div className="circle add-shopping" onClick={addShopping}>
+                                <FiShoppingCart color="white" size="24px"/>
                             </div>
                         </div>
                     </div>
@@ -77,11 +96,14 @@ export default function ProductDetailRelated(){
                     <div className="produk-img">
                         <img src={garlic2} alt="" />
                         <div className="menu">
-                            <div className="circle" onclick="window.location.href='product-detail.html'">
-                                <FiSearch size="24px" color="#ffffff" /> 
-                            </div>
-                            <div className="circle add-shopping">
-                                <FiShoppingCart size="24px" color="#ffffff" /> 
+                            <NavLink exact to="/product-detail">
+                                <div className="circle">
+                                    <FiSearch color="white" size="24px"/> 
+                                </div>
+                            </NavLink>
+                            
+                            <div className="circle add-shopping" onClick={addShopping}>
+                                <FiShoppingCart color="white" size="24px"/>
                             </div>
                         </div>
                     </div>

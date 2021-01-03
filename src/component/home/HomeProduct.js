@@ -9,27 +9,128 @@ import tomato from '../../assets/images/product/tomato.png';
 import garlic2 from '../../assets/images/product/garlic2.png';
 
 import { FiSearch, FiShoppingCart } from 'react-icons/fi';
+import {NavLink} from 'react-router-dom';
 
 import $ from 'jquery';
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');
+    $('.nav-search').removeClass('active');
+    $('.navbar').removeClass('search-active');
 }
+
+function btnAll(){
+    $('.home-product .content .body .fruits').removeClass('unActive');
+    $('.home-product .content .body .vegetables').removeClass('unActive');
+    $('.home-product .content .body .garlics').removeClass('unActive');
+    $('.home-product .content .body .seafoods').removeClass('unActive');
+    $('.home-product .content .body .meets').removeClass('unActive');
+
+    $('.home-product .content .title .button .btn-all').addClass('active');
+    $('.home-product .content .title .button .btn-fruits').removeClass('active');
+    $('.home-product .content .title .button .btn-vegetables').removeClass('active');
+    $('.home-product .content .title .button .btn-garlics').removeClass('active');
+    $('.home-product .content .title .button .btn-seafoods').removeClass('active');
+    $('.home-product .content .title .button .btn-meets').removeClass('active');
+}
+
+function btnFruits(){
+    $('.home-product .content .body .fruits').removeClass('unActive');
+    $('.home-product .content .body .vegetables').addClass('unActive');
+    $('.home-product .content .body .garlics').addClass('unActive');
+    $('.home-product .content .body .seafoods').addClass('unActive');
+    $('.home-product .content .body .meets').addClass('unActive');
+
+    $('.home-product .content .title .button .btn-all').removeClass('active');
+    $('.home-product .content .title .button .btn-fruits').addClass('active');
+    $('.home-product .content .title .button .btn-vegetables').removeClass('active');
+    $('.home-product .content .title .button .btn-garlics').removeClass('active');
+    $('.home-product .content .title .button .btn-seafoods').removeClass('active');
+    $('.home-product .content .title .button .btn-meets').removeClass('active');   
+}
+
+function btnVegetables(){
+    $('.home-product .content .body .fruits').addClass('unActive');
+    $('.home-product .content .body .vegetables').removeClass('unActive');
+    $('.home-product .content .body .garlics').addClass('unActive');
+    $('.home-product .content .body .seafoods').addClass('unActive');
+    $('.home-product .content .body .meets').addClass('unActive');
+
+    $('.home-product .content .title .button .btn-all').removeClass('active');
+    $('.home-product .content .title .button .btn-fruits').removeClass('active');
+    $('.home-product .content .title .button .btn-vegetables').addClass('active');
+    $('.home-product .content .title .button .btn-garlics').removeClass('active');
+    $('.home-product .content .title .button .btn-seafoods').removeClass('active');
+    $('.home-product .content .title .button .btn-meets').removeClass('active');   
+}
+
+function btnGarlics(){
+    $('.home-product .content .body .fruits').addClass('unActive');
+    $('.home-product .content .body .vegetables').addClass('unActive');
+    $('.home-product .content .body .garlics').removeClass('unActive');
+    $('.home-product .content .body .seafoods').addClass('unActive');
+    $('.home-product .content .body .meets').addClass('unActive');
+
+    $('.home-product .content .title .button .btn-all').removeClass('active');
+    $('.home-product .content .title .button .btn-fruits').removeClass('active');
+    $('.home-product .content .title .button .btn-vegetables').removeClass('active');
+    $('.home-product .content .title .button .btn-garlics').addClass('active');
+    $('.home-product .content .title .button .btn-seafoods').removeClass('active');
+    $('.home-product .content .title .button .btn-meets').removeClass('active');    
+}
+
+function btnSeafoods(){
+    $('.home-product .content .body .fruits').addClass('unActive');
+    $('.home-product .content .body .vegetables').addClass('unActive');
+    $('.home-product .content .body .garlics').addClass('unActive');
+    $('.home-product .content .body .seafoods').removeClass('unActive');
+    $('.home-product .content .body .meets').addClass('unActive');
+
+    $('.home-product .content .title .button .btn-all').removeClass('active');
+    $('.home-product .content .title .button .btn-fruits').removeClass('active');
+    $('.home-product .content .title .button .btn-vegetables').removeClass('active');
+    $('.home-product .content .title .button .btn-garlics').removeClass('active');
+    $('.home-product .content .title .button .btn-seafoods').addClass('active');
+    $('.home-product .content .title .button .btn-meets').removeClass('active');   
+}
+
+function btnMeets(){
+    $('.home-product .content .body .fruits').addClass('unActive');
+    $('.home-product .content .body .vegetables').addClass('unActive');
+    $('.home-product .content .body .garlics').addClass('unActive');
+    $('.home-product .content .body .seafoods').addClass('unActive');
+    $('.home-product .content .body .meets').removeClass('unActive');
+
+    $('.home-product .content .title .button .btn-all').removeClass('active');
+    $('.home-product .content .title .button .btn-fruits').removeClass('active');
+    $('.home-product .content .title .button .btn-vegetables').removeClass('active');
+    $('.home-product .content .title .button .btn-garlics').removeClass('active');
+    $('.home-product .content .title .button .btn-seafoods').removeClass('active');
+    $('.home-product .content .title .button .btn-meets').addClass('active');    
+}
+
+function addShopping(){
+    $('nav .content .icon .cart .notif').addClass('animate__animated animate__bounce').delay(500);
+    setTimeout(function(){
+        $('nav .content .icon .cart .notif').removeClass('animate__animated animate__bounce');
+    }, 1000);
+}
+
 
 function HomeProduct(){
     return (
-        <section className="home-product" onclick={btnMenuDown}>
+        <section className="home-product" onClick={btnMenuDown}>
         <div className="content">
             <div className="title">
                 <h2>NEW PRODUCTS</h2>
                 <h6>- Featured Products - </h6>
                 <div className="button">
-                    <button className="btn-all active">All</button>
-                    <button className="btn-fruits">Fruits</button>
-                    <button className="btn-vegetables">Vegetables</button>
-                    <button className="btn-garlics">Garlics</button>
-                    <button className="btn-seafoods">SeaFoods</button>
-                    <button className="btn-meets">Meets</button>
+                    <button className="btn-all active" onClick={btnAll}>All</button>
+                    <button className="btn-fruits" onClick={btnFruits}>Fruits</button>
+                    <button className="btn-vegetables" onClick={btnVegetables}>Vegetables</button>
+                    <button className="btn-garlics" onClick={btnGarlics}>Garlics</button>
+                    <button className="btn-seafoods" onClick={btnSeafoods}>SeaFoods</button>
+                    <button className="btn-meets" onClick={btnMeets}>Meets</button>
                 </div>
             </div>
             <div className="body">
@@ -37,11 +138,13 @@ function HomeProduct(){
                     <div className="produk-img">
                         <img src={grape} alt="" />
                         <div className="menu">
-                            <div className="circle" onclick="window.location.href='product-detail.html'">
-                                <FiSearch color="white" size="24px"/> 
-                                
-                            </div>
-                            <div className="circle add-shopping">
+                            <NavLink exact to="/product-detail">
+                                <div className="circle">
+                                    <FiSearch color="white" size="24px"/> 
+                                </div>
+                            </NavLink>
+                            
+                            <div className="circle add-shopping" onClick={addShopping}>
                                 <FiShoppingCart color="white" size="24px"/>
                             </div>
                         </div>
@@ -56,10 +159,13 @@ function HomeProduct(){
                     <div className="produk-img">
                         <img src={garlic1} alt="" />
                         <div className="menu">
-                            <div className="circle" onclick="window.location.href='product-detail.html'">
-                                <FiSearch color="white" size="24px"/> 
-                            </div>
-                            <div className="circle add-shopping">
+                            <NavLink exact to="/product-detail">
+                                <div className="circle">
+                                    <FiSearch color="white" size="24px"/> 
+                                </div>
+                            </NavLink>
+                            
+                            <div className="circle add-shopping" onClick={addShopping}>
                                 <FiShoppingCart color="white" size="24px"/>
                             </div>
                         </div>
@@ -74,10 +180,13 @@ function HomeProduct(){
                     <div className="produk-img">
                         <img src={meet} alt="" />
                         <div className="menu">
-                            <div className="circle" onclick="window.location.href='product-detail.html'">
-                                <FiSearch color="white" size="24px"/> 
-                            </div>
-                            <div className="circle add-shopping">
+                            <NavLink exact to="/product-detail">
+                                <div className="circle">
+                                    <FiSearch color="white" size="24px"/> 
+                                </div>
+                            </NavLink>
+                            
+                            <div className="circle add-shopping" onClick={addShopping}>
                                 <FiShoppingCart color="white" size="24px"/>
                             </div>
                         </div>
@@ -92,10 +201,13 @@ function HomeProduct(){
                     <div className="produk-img">
                         <img src={seafood1} alt="" />
                         <div className="menu">
-                            <div className="circle" onclick="window.location.href='product-detail.html'">
-                                <FiSearch color="white" size="24px"/> 
-                            </div>
-                            <div className="circle add-shopping">
+                            <NavLink exact to="/product-detail">
+                                <div className="circle">
+                                    <FiSearch color="white" size="24px"/> 
+                                </div>
+                            </NavLink>
+                            
+                            <div className="circle add-shopping" onClick={addShopping}>
                                 <FiShoppingCart color="white" size="24px"/>
                             </div>
                         </div>
@@ -110,10 +222,13 @@ function HomeProduct(){
                     <div className="produk-img">
                         <img src={seafood2} alt="" />
                         <div className="menu">
-                            <div className="circle" onclick="window.location.href='product-detail.html'">
-                                <FiSearch color="white" size="24px"/> 
-                            </div>
-                            <div className="circle add-shopping">
+                            <NavLink exact to="/product-detail">
+                                <div className="circle">
+                                    <FiSearch color="white" size="24px"/> 
+                                </div>
+                            </NavLink>
+                            
+                            <div className="circle add-shopping" onClick={addShopping}>
                                 <FiShoppingCart color="white" size="24px"/>
                             </div>
                         </div>
@@ -128,10 +243,13 @@ function HomeProduct(){
                     <div className="produk-img">
                         <img src={orange} alt="" />
                         <div className="menu">
-                            <div className="circle" onclick="window.location.href='product-detail.html'">
-                                <FiSearch color="white" size="24px"/> 
-                            </div>
-                            <div className="circle add-shopping">
+                            <NavLink exact to="/product-detail">
+                                <div className="circle">
+                                    <FiSearch color="white" size="24px"/> 
+                                </div>
+                            </NavLink>
+                            
+                            <div className="circle add-shopping" onClick={addShopping}>
                                 <FiShoppingCart color="white" size="24px"/>
                             </div>
                         </div>
@@ -146,10 +264,13 @@ function HomeProduct(){
                     <div className="produk-img">
                         <img src={tomato} alt="" />
                         <div className="menu">
-                            <div className="circle" onclick="window.location.href='product-detail.html'">
-                                <FiSearch color="white" size="24px"/> 
-                            </div>
-                            <div className="circle add-shopping">
+                            <NavLink exact to="/product-detail">
+                                <div className="circle">
+                                    <FiSearch color="white" size="24px"/> 
+                                </div>
+                            </NavLink>
+                            
+                            <div className="circle add-shopping" onClick={addShopping}>
                                 <FiShoppingCart color="white" size="24px"/>
                             </div>
                         </div>
@@ -164,10 +285,13 @@ function HomeProduct(){
                     <div className="produk-img">
                         <img src={garlic2} alt="" />
                         <div className="menu">
-                            <div className="circle" onclick="window.location.href='product-detail.html'">
-                                <FiSearch color="white" size="24px"/> 
-                            </div>
-                            <div className="circle add-shopping">
+                            <NavLink exact to="/product-detail">
+                                <div className="circle">
+                                    <FiSearch color="white" size="24px"/> 
+                                </div>
+                            </NavLink>
+                            
+                            <div className="circle add-shopping" onClick={addShopping}>
                                 <FiShoppingCart color="white" size="24px"/>
                             </div>
                         </div>

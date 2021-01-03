@@ -1,9 +1,30 @@
 import { FiFacebook, FiInstagram, FiTwitter, FiLinkedin } from "react-icons/fi";
 
+import founder from '../../assets/images/founder.png';
+
 import $ from 'jquery';
+import {NavLink} from 'react-router-dom';
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');
+    $('.nav-search').removeClass('active');
+    $('.navbar').removeClass('search-active');
+}
+
+function meFacebook(){
+    window.location.href='https://www.facebook.com/alfian.prisma.yopiangga';
+}
+
+function meInstagram(){
+    window.location.href='https://www.instagram.com/alfian_prisma_yopiangga/';
+}
+
+function meTwitter(){
+    window.location.href='https://twitter.com/AlfianPrisma';
+}
+
+function meLinkedin(){
+    window.location.href='https://www.linkedin.com/in/alfian-prisma-yopiangga-a954251a8/';
 }
 
 export default function TestimonialClient(){
@@ -22,7 +43,7 @@ export default function TestimonialClient(){
                     </div>
                     <div className="regards">
                         <div className="img">
-                            <img src="/images/founder.png" alt="" />
+                            <img src={founder} alt="" />
                         </div>
                         <div className="name">
                             <h3>ALFIAN PRISMA YOPIANGGA</h3>
@@ -30,10 +51,10 @@ export default function TestimonialClient(){
                         </div>
                     </div>
                     <div className="media-sosial">
-                        <FiFacebook color="#8EB359" size="24px" onclick="window.location.href='https://www.facebook.com/alfian.prisma.yopiangga'"></FiFacebook>
-                        <FiInstagram color="#8EB359" size="24px" onclick="window.location.href='https://www.instagram.com/alfian_prisma_yopiangga/'"></FiInstagram>
-                        <FiTwitter color="#8EB359" size="24px" onclick="window.location.href='https://twitter.com/AlfianPrisma'"></FiTwitter>
-                        <FiLinkedin color="#8EB359" size="24px" onclick="window.location.href='https://www.linkedin.com/in/alfian-prisma-yopiangga-a954251a8/'"></FiLinkedin>
+                        <FiFacebook color="#8EB359" size="24px" onClick={meFacebook}></FiFacebook>
+                        <FiInstagram color="#8EB359" size="24px" onClick={meInstagram}></FiInstagram>
+                        <FiTwitter color="#8EB359" size="24px" onClick={meTwitter}></FiTwitter>
+                        <FiLinkedin color="#8EB359" size="24px" onClick={meLinkedin}></FiLinkedin>
                     </div>
                 </div>
             </div>
