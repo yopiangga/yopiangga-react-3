@@ -14,6 +14,53 @@ function btnMenuDown(){
     $('.navbar').removeClass('search-active');
 }
 
+function productImage1(){
+    $('.product-detail-home .content .left .big-img .big-img-1').addClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-2').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-3').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-4').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-5').removeClass('active');
+}
+
+function productImage2(){
+    $('.product-detail-home .content .left .big-img .big-img-1').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-2').addClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-3').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-4').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-5').removeClass('active');
+}
+
+function productImage3(){
+    $('.product-detail-home .content .left .big-img .big-img-1').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-2').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-3').addClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-4').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-5').removeClass('active'); 
+}
+
+function productImage4(){
+    $('.product-detail-home .content .left .big-img .big-img-1').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-2').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-3').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-4').addClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-5').removeClass('active');
+}
+
+function productImage5(){
+    $('.product-detail-home .content .left .big-img .big-img-1').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-2').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-3').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-4').removeClass('active');
+    $('.product-detail-home .content .left .big-img .big-img-5').addClass('active');
+}
+
+function addShopping(){
+    $('nav .content .icon .cart .notif').addClass('animate__animated animate__bounce').delay(500);
+    setTimeout(function(){
+        $('nav .content .icon .cart .notif').removeClass('animate__animated animate__bounce');
+    }, 1000);
+}
+
 export default function ProductDetailHome(){
     return(
     <section className="product-detail-home" onClick={btnMenuDown}>
@@ -27,11 +74,11 @@ export default function ProductDetailHome(){
                     <img className="big-img-5" src={productDetail5} alt="" />
                 </div>
                 <div className="small-img">
-                    <img className="small-img-1" src={productDetail1} alt="" />
-                    <img className="small-img-2" src={productDetail2} alt="" />
-                    <img className="small-img-3" src={productDetail3} alt="" />
-                    <img className="small-img-4" src={productDetail4} alt="" />
-                    <img className="small-img-5" src={productDetail5} alt="" />
+                    <img className="small-img-1" src={productDetail1} alt="" onClick={productImage1} />
+                    <img className="small-img-2" src={productDetail2} alt="" onClick={productImage2} />
+                    <img className="small-img-3" src={productDetail3} alt="" onClick={productImage3} />
+                    <img className="small-img-4" src={productDetail4} alt="" onClick={productImage4} />
+                    <img className="small-img-5" src={productDetail5} alt="" onClick={productImage5} />
                 </div>
             </div>
             <div className="right">
@@ -39,10 +86,10 @@ export default function ProductDetailHome(){
                 <h3>$15.00</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam necessitatibus unde natus amet reprehenderit ut error, atque eaque velit minima, porro consequuntur esse iure omnis.</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam necessitatibus unde natus amet reprehenderit ut error, atque eaque velit minima, porro consequuntur esse iure omnis labore nemo dolor laboriosam nisi.</p>
-                <form action="">
+                <form>
                     <div className="form-group">
                         <input type="text" placeholder="Quantity" />
-                        <button className="btn-add-cart">
+                        <button className="btn-add-cart" type="button" onClick={addShopping}>
                             <FiShoppingCart size="24px" color="#ffffff"/>
                         </button>
                     </div>

@@ -12,6 +12,24 @@ function btnMenuDown(){
     $('.navbar').removeClass('search-active');
 }
 
+function deleteList1(){
+    $('.table-cart .content table .tr-1').addClass('unActive');
+    $('.table-cart .content table .tr-2').addClass('animate__animated animate__fadeInUp');
+    $('.table-cart .content table .tr-3').addClass('animate__animated animate__fadeInUp');
+}
+
+function deleteList2(){
+    $('.table-cart .content table .tr-1').addClass('animate__animated animate__fadeInUp');
+    $('.table-cart .content table .tr-2').addClass('unActive');
+    $('.table-cart .content table .tr-3').addClass('animate__animated animate__fadeInUp');
+}
+
+function deleteList3(){
+    $('.table-cart .content table .tr-1').addClass('animate__animated animate__fadeInUp');
+    $('.table-cart .content table .tr-2').addClass('animate__animated animate__fadeInUp');
+    $('.table-cart .content table .tr-3').addClass('unActive');
+}
+
 export default function CartTable(){
     return(
     <section className="table-cart" onClick={btnMenuDown}>
@@ -26,7 +44,7 @@ export default function CartTable(){
                     <th>Sub Total</th>
                 </tr>
                 <tr className="tr-1">
-                    <td className="td-1"><FiX color="333333" size="24px" /></td>
+                    <td className="td-1"><FiX color="333333" size="24px" onClick={deleteList1} /></td>
                     <td className="img"><img src={meet} alt="" /></td>
                     <td>Meet Burger</td>
                     <td>$15.00</td>
@@ -34,7 +52,7 @@ export default function CartTable(){
                     <td>$30.00</td>
                 </tr>
                 <tr className="tr-2">
-                    <td className="td-2"><FiX color="333333" size="24px" /></td>
+                    <td className="td-2"><FiX color="333333" size="24px" onClick={deleteList2} /></td>
                     <td className="img"><img src={seafood1} alt="" /></td>
                     <td>Large Shrimp</td>
                     <td>$15.00</td>
@@ -42,7 +60,7 @@ export default function CartTable(){
                     <td>$30.00</td>
                 </tr>
                 <tr className="tr-3">
-                    <td className="td-3"><FiX color="333333" size="24px" /></td>
+                    <td className="td-3"><FiX color="333333" size="24px" onClick={deleteList3} /></td>
                     <td className="img"><img src={orange} alt="" /></td>
                     <td>Orange Fruit</td>
                     <td>$15.00</td>

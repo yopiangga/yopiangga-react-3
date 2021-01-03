@@ -8,11 +8,28 @@ import blog4 from '../../assets/images/blog-4.png';
 import founder from '../../assets/images/founder.png'
 
 import $ from 'jquery';
+import {NavLink} from 'react-router-dom';
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');
     $('.nav-search').removeClass('active');
     $('.navbar').removeClass('search-active');
+}
+
+function meFacebook(){
+    window.location.href='https://www.facebook.com/alfian.prisma.yopiangga';
+}
+
+function meInstagram(){
+    window.location.href='https://www.instagram.com/alfian_prisma_yopiangga/';
+}
+
+function meTwitter(){
+    window.location.href='https://twitter.com/AlfianPrisma';
+}
+
+function meLinkedin(){
+    window.location.href='https://www.linkedin.com/in/alfian-prisma-yopiangga-a954251a8/';
 }
 
 export default function BlogDetailHome(){
@@ -63,14 +80,14 @@ export default function BlogDetailHome(){
                 </div>
                 <div class="main-footer">
                     <div class="tag">
-                        <FiTag size="18px" color="#534741" />
+                        <FiTag size="18px" color="#333333" />
                         <h4> fruits, petikdua store, vegetables</h4>
                     </div>
                     <div class="media-sosial">
-                        <FiFacebook color="#534741" size="24px" onclick="window.location.href='https://www.facebook.com/alfian.prisma.yopiangga'"></FiFacebook>
-                        <FiInstagram color="#534741" size="24px" onclick="window.location.href='https://www.instagram.com/alfian_prisma_yopiangga/'"></FiInstagram>
-                        <FiTwitter color="#534741" size="24px" onclick="window.location.href='https://twitter.com/AlfianPrisma'"></FiTwitter>
-                        <FiLinkedin color="#534741" size="24px" onclick="window.location.href='https://www.linkedin.com/in/alfian-prisma-yopiangga-a954251a8/'"></FiLinkedin>
+                        <FiFacebook color="#333333" size="24px" onClick={meFacebook}></FiFacebook>
+                        <FiInstagram color="#333333" size="24px" onClick={meInstagram}></FiInstagram>
+                        <FiTwitter color="#333333" size="24px" onClick={meTwitter}></FiTwitter>
+                        <FiLinkedin color="#333333" size="24px" onClick={meLinkedin}></FiLinkedin>
                     </div>
                 </div>
 
@@ -150,12 +167,12 @@ export default function BlogDetailHome(){
                 <div class="write-comment-body">
                     <form action="">
                         <div class="form-group">
-                            <input type="text" placeholder="Name*" />
-                            <input type="text" placeholder="Email*" />
+                            <input type="text" placeholder="Name*" required/>
+                            <input type="text" placeholder="Email*" required/>
                             <input type="text" placeholder="Telephone" />
                         </div>
                         <div class="form-group">
-                            <textarea rows="15" placeholder="Comment*"></textarea>
+                            <textarea rows="15" placeholder="Comment*" required></textarea>
                         </div>
                         <button class="btn-send">SEND US NOW</button>
                     </form>
@@ -200,7 +217,7 @@ export default function BlogDetailHome(){
                 </div>
                 <div class="popular-post-bar">
                     <h2>Popular Posts</h2>
-                    <div class="card-blog" onclick="window.location.href='blog-detail.html'">
+                    <div class="card-blog">
                         <div class="blog-img">
                             <img src={blog2} alt="" />
                         </div>
@@ -208,10 +225,12 @@ export default function BlogDetailHome(){
                             <h6>October 23, 2020</h6>
                             <h3>Become Heart Healthy in 5 Steps</h3>
                             <p>Improving your diet lowers your risk for heart…</p>
-                            <h4><a href="">READ MORE</a></h4>
+                            <NavLink exact to="/blog-detail">
+                                <h4><a href="">READ MORE</a></h4>
+                            </NavLink>
                         </div>
                     </div>
-                    <div class="card-blog" onclick="window.location.href='blog-detail.html'">
+                    <div class="card-blog">
                         <div class="blog-img">
                             <img src={blog3} alt="" />
                         </div>
@@ -219,10 +238,12 @@ export default function BlogDetailHome(){
                             <h6>October 23, 2020</h6>
                             <h3>Become Heart Healthy in 5 Steps</h3>
                             <p>Improving your diet lowers your risk for heart…</p>
-                            <h4><a href="">READ MORE</a></h4>
+                            <NavLink exact to="/blog-detail">
+                                <h4><a href="">READ MORE</a></h4>
+                            </NavLink>
                         </div>
                     </div>
-                    <div class="card-blog" onclick="window.location.href='blog-detail.html'">
+                    <div class="card-blog">
                         <div class="blog-img">
                             <img src={blog4} alt="" />
                         </div>
@@ -230,7 +251,9 @@ export default function BlogDetailHome(){
                             <h6>October 23, 2020</h6>
                             <h3>Become Heart Healthy in 5 Steps</h3>
                             <p>Improving your diet lowers your risk for heart…</p>
-                            <h4><a href="">READ MORE</a></h4>
+                            <NavLink exact to="/blog-detail">
+                                <h4><a href="">READ MORE</a></h4>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -257,7 +280,7 @@ export default function BlogDetailHome(){
 
                 <div class="recent-post-bar">
                     <h2>Recent Posts</h2>
-                    <div class="card-blog" onclick="window.location.href='blog-detail.html'">
+                    <div class="card-blog">
                         <div class="blog-img">
                             <img src={blog2} alt="" />
                         </div>
@@ -265,10 +288,12 @@ export default function BlogDetailHome(){
                             <h6>October 23, 2020</h6>
                             <h3>Become Heart Healthy in 5 Steps</h3>
                             <p>Improving your diet lowers your risk for heart…</p>
-                            <h4><a href="">READ MORE</a></h4>
+                            <NavLink exact to="/blog-detail">
+                                <h4><a href="">READ MORE</a></h4>
+                            </NavLink>
                         </div>
                     </div>
-                    <div class="card-blog" onclick="window.location.href='blog-detail.html'">
+                    <div class="card-blog">
                         <div class="blog-img">
                             <img src={blog3} alt="" />
                         </div>
@@ -276,10 +301,12 @@ export default function BlogDetailHome(){
                             <h6>October 23, 2020</h6>
                             <h3>Become Heart Healthy in 5 Steps</h3>
                             <p>Improving your diet lowers your risk for heart…</p>
-                            <h4><a href="">READ MORE</a></h4>
+                            <NavLink exact to="/blog-detail">
+                                <h4><a href="">READ MORE</a></h4>
+                            </NavLink>
                         </div>
                     </div>
-                    <div class="card-blog" onclick="window.location.href='blog-detail.html'">
+                    <div class="card-blog">
                         <div class="blog-img">
                             <img src={blog4} alt="" />
                         </div>
@@ -287,7 +314,9 @@ export default function BlogDetailHome(){
                             <h6>October 23, 2020</h6>
                             <h3>Become Heart Healthy in 5 Steps</h3>
                             <p>Improving your diet lowers your risk for heart…</p>
-                            <h4><a href="">READ MORE</a></h4>
+                            <NavLink exact to="/blog-detail">
+                                <h4><a href="">READ MORE</a></h4>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

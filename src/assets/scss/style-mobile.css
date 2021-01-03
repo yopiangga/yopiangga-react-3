@@ -1209,6 +1209,17 @@
   .footer .content .body .information h6 {
     font-size: 16px;
     margin-bottom: 20px;
+    color: #333333;
+    text-decoration: none;
+  }
+  .footer .content .body .information .information-link:focus, .footer .content .body .information .information-link:hover, .footer .content .body .information .information-link:visited, .footer .content .body .information .information-link:link, .footer .content .body .information .information-new:active {
+    text-decoration: none;
+  }
+  .footer .content .body .information h6:hover {
+    cursor: pointer;
+    color: #8EB359;
+    -webkit-transition: 150ms;
+    transition: 150ms;
   }
   .footer .content .body .navigation {
     margin-bottom: 40px;
@@ -1221,7 +1232,17 @@
   }
   .footer .content .body .navigation h6 {
     font-size: 16px;
+    color: #333333;
     margin-bottom: 20px;
+  }
+  .footer .content .body .navigation .navigation-link:focus, .footer .content .body .navigation .navigation-link:hover, .footer .content .body .navigation .navigation-link:visited, .footer .content .body .navigation .navigation-link:link, .footer .content .body .navigation .information-new:active {
+    text-decoration: none;
+  }
+  .footer .content .body .navigation h6:hover {
+    cursor: pointer;
+    color: #8EB359;
+    -webkit-transition: 150ms;
+    transition: 150ms;
   }
   .footer .content .body .photo {
     margin-bottom: 40px;

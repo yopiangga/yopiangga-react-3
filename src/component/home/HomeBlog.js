@@ -23,7 +23,6 @@ function HomeBlog(){
             </div>
             <div className="body">
                 <div className="blog-left">
-                    <NavLink exact to="/blog-detail">
                     <div className="card-blog" >
                         <div className="blog-img">
                             <div className="frame"></div>
@@ -33,14 +32,14 @@ function HomeBlog(){
                             <h6>October 23, 2020</h6>
                             <h3>Become Heart Healthy in 5 Steps</h3>
                             <p>Improving your diet lowers your risk for heart…</p>
-                            <h4><a href="">READ MORE</a></h4>
+                            <NavLink exact to="/blog-detail">
+                                <h4><a href="">READ MORE</a></h4>
+                            </NavLink>
                         </div>
                     </div>      
-                    </NavLink>
                 </div>
 
                 <div className="blog-right">
-                    <NavLink exact to="/blog-detail">
                     <div className="card-blog" >
                         <div className="blog-img">
                             <img src={blog2} alt="" />
@@ -49,12 +48,12 @@ function HomeBlog(){
                             <h6>October 23, 2020</h6>
                             <h3>Become Heart Healthy in 5 Steps</h3>
                             <p>Improving your diet lowers your risk for heart…</p>
-                            <h4><a href="">READ MORE</a></h4>
+                            <NavLink exact to="/blog-detail">
+                                <h4><a href="">READ MORE</a></h4>
+                            </NavLink>
                         </div>
                     </div>      
-                    </NavLink>
 
-                    <NavLink exact to="/blog-detail">
                     <div className="card-blog" >
                         <div className="blog-img">
                             <img src={blog3} alt="" />
@@ -63,10 +62,11 @@ function HomeBlog(){
                             <h6>October 23, 2020</h6>
                             <h3>Become Heart Healthy in 5 Steps</h3>
                             <p>Improving your diet lowers your risk for heart…</p>
-                            <h4><a href="">READ MORE</a></h4>
+                            <NavLink exact to="/blog-detail">
+                                <h4><a href="">READ MORE</a></h4>
+                            </NavLink>
                         </div>
                     </div>      
-                    </NavLink>
                 </div>
             </div>
         </div>

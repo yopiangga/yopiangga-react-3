@@ -1,11 +1,14 @@
 
 import $ from 'jquery';
+import {NavLink} from 'react-router-dom';
+
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');
     $('.nav-search').removeClass('active');
     $('.navbar').removeClass('search-active');
 }
+
 
 export default function CartList(){
     return(
@@ -34,7 +37,9 @@ export default function CartList(){
                     </tr>
                     <tr style={{border: 0}}>
                         <td>
-                            <button className="btn-proceed-checkout" onclick="window.location.href='checkout.html'">Proceed to checkout</button>
+                            <NavLink exact to="/checkout">
+                                <button className="btn-proceed-checkout">Proceed to checkout</button>
+                            </NavLink>
                         </td>
                     </tr>
                 </table>

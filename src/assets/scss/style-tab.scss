@@ -1048,6 +1048,12 @@ nav {
                 h6 {
                     font-size: 16px;
                     margin-bottom: 20px;
+                    color: $color-secondary;
+                    text-decoration: none;
+                }
+
+                .information-link:focus, .information-link:hover, .information-link:visited, .information-link:link, .information-new:active {
+                        text-decoration: none;
                 }
 
                 h6:hover {
@@ -1068,7 +1074,12 @@ nav {
 
                 h6 {
                     font-size: 16px;
+                    color: $color-secondary;
                     margin-bottom: 20px;
+                }
+
+                .navigation-link:focus, .navigation-link:hover, .navigation-link:visited, .navigation-link:link, .information-new:active {
+                    text-decoration: none;
                 }
 
                 h6:hover {
