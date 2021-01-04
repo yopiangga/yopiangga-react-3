@@ -5,6 +5,10 @@ import seafood1 from '../../assets/images/product/seafood1.png';
 import orange from '../../assets/images/product/orange.png';
 
 import $ from 'jquery';
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+Aos.init();
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');

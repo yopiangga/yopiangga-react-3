@@ -7,6 +7,10 @@ import productDetail4 from '../../assets/images/product-detail-4.png';
 import productDetail5 from '../../assets/images/product-detail-5.png';
 
 import $ from 'jquery';
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+Aos.init();
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');

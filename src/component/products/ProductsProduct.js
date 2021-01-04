@@ -16,6 +16,10 @@ import { FiSearch, FiShoppingCart } from 'react-icons/fi';
 import {NavLink} from 'react-router-dom';
 
 import $ from 'jquery';
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+Aos.init();
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');
