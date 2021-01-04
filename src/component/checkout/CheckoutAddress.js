@@ -73,24 +73,24 @@ export default function CheckoutAddress(){
                     </div>
                     <div className="your-order-body">
                         <table>
-                            <tr>
+                            <tr data-aos="fade-up" data-aos-duration="400">
                                 <th>Product</th>
                                 <th id="desktop">Subtotal</th>
                                 <th id="mobile" style={{textAlign: "right"}}>Subtotal</th>
                             </tr>
-                            <tr className="list-product">
+                            <tr className="list-product" data-aos="fade-up" data-aos-duration="600">
                                 <td style={{textAlign: "left"}}>Fresh Natherlands Lecy</td>
                                 <td>$15.00</td>
                             </tr>
-                            <tr>
+                            <tr data-aos="fade-up" data-aos-duration="800">
                                 <th>Subtotal</th>
                                 <td>$15.00</td>
                             </tr>
-                            <tr>
+                            <tr data-aos="fade-up" data-aos-duration="1000">
                                 <th>Shipping</th>
                                 <td>Flat rate: $79.00</td>
                             </tr>
-                            <tr>
+                            <tr data-aos="fade-up" data-aos-duration="1200">
                                 <th>Total</th>
                                 <td>$94.00</td>
                             </tr>

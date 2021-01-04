@@ -206,6 +206,9 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  nav .content .icon .cart-icon:focus, nav .content .icon .cart-icon:hover, nav .content .icon .cart-icon:visited, nav .content .icon .cart-icon:link, nav .content .icon .information-new:active {
+    text-decoration: none;
+  }
   nav .content .icon .search {
     display: -webkit-box;
     display: -ms-flexbox;

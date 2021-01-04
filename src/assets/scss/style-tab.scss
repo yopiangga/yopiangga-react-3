@@ -180,6 +180,11 @@ nav {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            
+            .cart-icon:focus, .cart-icon:hover, .cart-icon:visited, .cart-icon:link, .information-new:active {
+                text-decoration: none;
+            }
+
             .search {
                 display: flex;
                 margin-right: 20px;

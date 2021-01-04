@@ -33,7 +33,7 @@ export default function ProductDetailRelated(){
                 <h2>Related Poducts</h2>
             </div>
             <div className="content-body">
-                <div className="produk vegetables">
+                <div className="produk vegetables" data-aos="fade-up" data-aos-duration="400">
                     <div className="produk-img">
                         <img src={seafood2} alt="" />
                         <div className="menu">
@@ -54,7 +54,7 @@ export default function ProductDetailRelated(){
                         <h6>$14.00</h6>
                     </div>
                 </div>
-                <div className="produk vegetables">
+                <div className="produk vegetables" data-aos="fade-up" data-aos-duration="600">
                     <div className="produk-img">
                         <img src={orange} alt="" />
                         <div className="menu">
@@ -75,7 +75,7 @@ export default function ProductDetailRelated(){
                         <h6>$2.99</h6>
                     </div>
                 </div>
-                <div className="produk vegetables">
+                <div className="produk vegetables" data-aos="fade-up" data-aos-duration="800">
                     <div className="produk-img">
                         <img src={tomato} alt="" />
                         <div className="menu">
@@ -96,7 +96,7 @@ export default function ProductDetailRelated(){
                         <h6>$3.99</h6>
                     </div>
                 </div>
-                <div className="produk vegetables">
+                <div className="produk vegetables" data-aos="fade-up" data-aos-duration="1000">
                     <div className="produk-img">
                         <img src={garlic2} alt="" />
                         <div className="menu">

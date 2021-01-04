@@ -39,7 +39,7 @@ export default function TestimonialClient(){
                 <h2>The client said</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div className="body">
+            <div className="body" data-aos="fade-up" data-aos-duration="400">
                 <div className="card-client">
                     <div className="review">
                         <span>"</span>
@@ -50,8 +50,8 @@ export default function TestimonialClient(){
                             <img src={founder} alt="" />
                         </div>
                         <div className="name">
-                            <h3>ALFIAN PRISMA YOPIANGGA</h3>
-                            <h4>FOUNDER PETIKDUA</h4>
+                            <h3 data-aos="fade-up" data-aos-duration="600">ALFIAN PRISMA YOPIANGGA</h3>
+                            <h4 data-aos="fade-up" data-aos-duration="800">FOUNDER PETIKDUA</h4>
                         </div>
                     </div>
                     <div className="media-sosial">

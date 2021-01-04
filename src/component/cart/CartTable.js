@@ -47,7 +47,7 @@ export default function CartTable(){
                     <th>Quantity</th>
                     <th>Sub Total</th>
                 </tr>
-                <tr className="tr-1">
+                <tr className="tr-1" data-aos="fade-up" data-aos-duration="400">
                     <td className="td-1"><FiX color="333333" size="24px" onClick={deleteList1} /></td>
                     <td className="img"><img src={meet} alt="" /></td>
                     <td>Meet Burger</td>
@@ -55,7 +55,7 @@ export default function CartTable(){
                     <td>2</td>
                     <td>$30.00</td>
                 </tr>
-                <tr className="tr-2">
+                <tr className="tr-2" data-aos="fade-up" data-aos-duration="600">
                     <td className="td-2"><FiX color="333333" size="24px" onClick={deleteList2} /></td>
                     <td className="img"><img src={seafood1} alt="" /></td>
                     <td>Large Shrimp</td>
@@ -63,7 +63,7 @@ export default function CartTable(){
                     <td>2</td>
                     <td>$30.00</td>
                 </tr>
-                <tr className="tr-3">
+                <tr className="tr-3" data-aos="fade-up" data-aos-duration="800">
                     <td className="td-3"><FiX color="333333" size="24px" onClick={deleteList3} /></td>
                     <td className="img"><img src={orange} alt="" /></td>
                     <td>Orange Fruit</td>

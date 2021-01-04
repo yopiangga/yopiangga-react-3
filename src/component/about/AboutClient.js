@@ -18,11 +18,11 @@ export default function AboutClient(){
             </div>
             <div className="body">
                 <div className="card-client">
-                    <div className="review">
+                    <div className="review" data-aos="fade-up" data-aos-duration="400">
                         <span>"</span>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem voluptas, explicabo sint esse laborum ea omnis quibusdam harum recusandae. Dolorem aperiam nostrum hic est illum asperiore</p>
                     </div>
-                    <div className="regards">
+                    <div className="regards" data-aos="fade-up" data-aos-duration="1000">
                         <div className="img">
                             <img src={founder} alt="" />
                         </div>
@@ -33,11 +33,11 @@ export default function AboutClient(){
                     </div>
                 </div>
                 <div className="card-client">
-                    <div className="review">
+                    <div className="review" data-aos="fade-up" data-aos-duration="600">
                         <span>"</span>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem voluptas, explicabo sint esse laborum ea omnis quibusdam harum recusandae. Dolorem aperiam nostrum hic est illum asperiore</p>
                     </div>
-                    <div className="regards">
+                    <div className="regards" data-aos="fade-up" data-aos-duration="1200">
                         <div className="img">
                             <img src={founder} alt="" />
                         </div>
@@ -48,11 +48,11 @@ export default function AboutClient(){
                     </div>
                 </div>
                 <div className="card-client">
-                    <div className="review">
+                    <div className="review" data-aos="fade-up" data-aos-duration="800">
                         <span>"</span>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem voluptas, explicabo sint esse laborum ea omnis quibusdam harum recusandae. Dolorem aperiam nostrum hic est illum asperiore</p>
                     </div>
-                    <div className="regards">
+                    <div className="regards" data-aos="fade-up" data-aos-duration="1400">
                         <div className="img">
                             <img src={founder} alt="" />
                         </div>

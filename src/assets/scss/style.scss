@@ -176,6 +176,10 @@
                 justify-content: space-around;
                 align-items: center;
 
+                .cart-icon:focus, .cart-icon:hover, .cart-icon:visited, .cart-icon:link, .information-new:active {
+                    text-decoration: none;
+                }
+
                 div {
                     height: 95%;
                     display: flex;

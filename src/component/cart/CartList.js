@@ -22,11 +22,11 @@ export default function CartList(){
             </div>
             <div className="content-body">
                 <table>
-                    <tr>
+                    <tr data-aos="fade-up" data-aos-duration="400">
                         <th>Sub total</th>
                         <td>$30.00</td>
                     </tr>
-                    <tr>
+                    <tr data-aos="fade-up" data-aos-duration="600">
                         <th>Shipping</th>
                         <td>
                             <h4>Flat rate: $79.00</h4>
@@ -34,7 +34,7 @@ export default function CartList(){
                             <a href="">Change address</a>
                         </td>
                     </tr>
-                    <tr>
+                    <tr data-aos="fade-up" data-aos-duration="800">
                         <th>Total</th>
                         <td>$109.00</td>
                     </tr>

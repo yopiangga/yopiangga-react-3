@@ -36,7 +36,7 @@ function NavMobile() {
                     <FiSearch size="24px" color="#534741"/>    
                 </div>
                 
-                <NavLink exact to="/cart" className="" activeClassName="active">
+                <NavLink exact to="/cart" className="cart-icon" activeClassName="active">
                     <div className="cart">
                             <FiShoppingCart size="24px" color="#534741"/>
                         <div className="notif">
