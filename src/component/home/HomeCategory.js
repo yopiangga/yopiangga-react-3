@@ -7,6 +7,10 @@ import garlics from '../../assets/images/garlic.png';
 import meets from '../../assets/images/meet.png';
 
 import $ from 'jquery';
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+Aos.init();
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');
@@ -24,7 +28,7 @@ function HomeCategory(){
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt reiciendis unde iste, harum, autem nam odit ipsum doloribus quae dolorum veritatis. Debitis quam quidem, amet praesentium dolorem velit recusandae.</p>
                 </div>
                 <div className="body">
-                    <div className="category category-1">
+                    <div className="category category-1" data-aos="fade-up" data-aos-duration="400">
                         <div className="category-img">
                             <img src={fruits} alt=""></img>
                         </div>
@@ -33,7 +37,7 @@ function HomeCategory(){
                             <h6>(9 items)</h6>
                         </div>
                     </div>
-                    <div className="category category-2">
+                    <div className="category category-2" data-aos="fade-up" data-aos-duration="600">
                         <div className="category-img">
                             <img src={vegetables} alt=""></img>
                         </div>
@@ -42,7 +46,7 @@ function HomeCategory(){
                             <h6>(9 items)</h6>
                         </div>
                     </div>
-                    <div className="category category-3">
+                    <div className="category category-3" data-aos="fade-up" data-aos-duration="800">
                         <div className="category-img">
                             <img src={seafoods} alt=""></img>
                         </div>
@@ -51,7 +55,7 @@ function HomeCategory(){
                             <h6>(9 items)</h6>
                         </div>
                     </div>
-                    <div className="category category-4">
+                    <div className="category category-4" data-aos="fade-up" data-aos-duration="1000">
                         <div className="category-img">
                             <img src={garlics} alt=""></img>
                         </div>
@@ -60,7 +64,7 @@ function HomeCategory(){
                             <h6>(9 items)</h6>
                         </div>
                     </div>
-                    <div className="category category-5">
+                    <div className="category category-5" data-aos="fade-up" data-aos-duration="1200">
                         <div className="category-img">
                             <img src={meets} alt=""></img>
                         </div>

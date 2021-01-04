@@ -11,7 +11,7 @@ import Footer from '../component/all/Footer';
 
 export default function Testimonial(){
   return (
-    <body>
+    <div>
        <NavSearch />
        <Nav />
        <NavMobile />
@@ -19,6 +19,6 @@ export default function Testimonial(){
        <TestimonialClient />
        <Subscribe />
        <Footer />
-    </body>
+    </div>
   )
 }

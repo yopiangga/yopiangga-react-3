@@ -1,3 +1,4 @@
+import {NavLink} from 'react-router-dom';
 
 import $ from 'jquery';
 
@@ -9,11 +10,13 @@ function btnMenuDown(){
 
 export default function PersonalMain(){
     return(
-    <section className="section-intro" onclick={btnMenuDown}>
+    <section className="section-intro" onClick={btnMenuDown}>
         <div className="content">
             <h2>PERSONAL INFORMATION</h2>
             <p>Home / <span>Personal Information</span></p>
-            <button className="btn-signout" onclick="window.location.href='index.html'">Sign Out</button>
+            <NavLink to="authentication">
+                <button className="btn-signout">Sign Out</button>
+            </NavLink>
         </div>
 
     </section>

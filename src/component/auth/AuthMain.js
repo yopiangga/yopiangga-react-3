@@ -22,35 +22,35 @@ function signIn(){
 
 export default function AuthMain(){
     return(
-    <section class="sign-in-sign-up">
-        <div class="content">
-            <div class="content-left">
-                <div class="logo">
+    <section className="sign-in-sign-up">
+        <div className="content">
+            <div className="content-left">
+                <div className="logo">
                     <img src={logo} alt="" />
                 </div>
-                <div class="logo-light">
+                <div className="logo-light">
                     <img src={logoLight} alt="" />
                 </div>
-                <div class="sign-in">
+                <div className="sign-in">
                     <h1>Sign in to Petik<span>dua</span></h1>
-                    <div class="media-sosial">
-                        <div class="circle">
+                    <div className="media-sosial">
+                        <div className="circle">
                             <FiFacebook color="#7a7a7a" size="20px" />
                         </div>
-                        <div class="circle">
+                        <div className="circle">
                             <FiLinkedin color="#7a7a7a" size="20px" />
                         </div>
                     </div>
                     <p>or use your email account</p>
                     <form>
-                        <div class="group">
-                            <div class="group-icon">
+                        <div className="group">
+                            <div className="group-icon">
                                 <FiMail color="#7a7a7a" size="20px" />
                             </div>
                             <input type="email" placeholder="Email" />
                         </div>
-                        <div class="group">
-                            <div class="group-icon">
+                        <div className="group">
+                            <div className="group-icon">
                                 <FiLock color="#7a7a7a" size="20px" />
                             </div>
                             <input type="password" placeholder="Password" />
@@ -59,48 +59,48 @@ export default function AuthMain(){
                         <NavLink exact to="/"> <button className="btn-sign-in">SIGN IN</button></NavLink> 
                     </form>
                 </div>
-                <div class="sign-in-2">
+                <div className="sign-in-2">
                     <h1>Hello, <span>Friend!</span></h1>
                     <p>To keep connected with us please login with your personal info</p>
-                    <button class="btn-sign-in" onClick={signIn}>SIGN IN</button>
+                    <button className="btn-sign-in" onClick={signIn}>SIGN IN</button>
                 </div>
             </div>
 
 
 
-            <div class="content-right">
-                <div class="sign-up">
+            <div className="content-right">
+                <div className="sign-up">
                     <h1>Hello, Friend!</h1>
                     <p>Enter your personal detail and start buying with us</p>
-                    <button class="btn-sign-up" onClick={signUp}>SIGN UP</button>
+                    <button className="btn-sign-up" onClick={signUp}>SIGN UP</button>
                 </div>
 
-                <div class="sign-up-2">
+                <div className="sign-up-2">
                     <h1>Create Account Petik<span>dua</span></h1>
-                    <div class="media-sosial">
-                        <div class="circle">
+                    <div className="media-sosial">
+                        <div className="circle">
                             <FiFacebook color="#7a7a7a" size="20px" />
                         </div>
-                        <div class="circle">
+                        <div className="circle">
                             <FiLinkedin color="#7a7a7a" size="20px" />
                         </div>
                     </div>
                     <p>or use your email for registration</p>
                     <form>
-                        <div class="group">
-                            <div class="group-icon">
+                        <div className="group">
+                            <div className="group-icon">
                                 <FiMail color="#7a7a7a" size="20px" />
                             </div>
                             <input type="email" placeholder="Email" />
                         </div>
-                        <div class="group">
-                            <div class="group-icon">
+                        <div className="group">
+                            <div className="group-icon">
                                 <FiLock color="#7a7a7a" size="20px" />
                             </div>
                             <input type="password" placeholder="Password" />
                         </div>
-                        <div class="group">
-                            <div class="group-icon">
+                        <div className="group">
+                            <div className="group-icon">
                                 <FiLock color="#7a7a7a" size="20px" />
                             </div>
                             <input type="password" placeholder="Repeat Password" />

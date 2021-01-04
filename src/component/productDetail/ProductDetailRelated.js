@@ -23,7 +23,7 @@ function addShopping(){
 
 export default function ProductDetailRelated(){
     return(
-    <section className="product-detail-related" onclick={btnMenuDown}>
+    <section className="product-detail-related" onClick={btnMenuDown}>
         <div className="content">
             <div className="content-head">
                 <h2>Related Poducts</h2>

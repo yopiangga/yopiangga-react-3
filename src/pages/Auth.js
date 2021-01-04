@@ -6,8 +6,8 @@ import AuthMain from '../component/auth/AuthMain';
 
 export default function Products(){
   return (
-    <body>
+    <div>
        <AuthMain />
-    </body>
+    </div>
   )
 }

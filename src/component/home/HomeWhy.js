@@ -4,6 +4,10 @@ import leaves2 from '../../assets/images/leaves-02.png';
 import fruitLemon from '../../assets/images/fruit-lemon.png';
 
 import $ from 'jquery';
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+Aos.init();
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');
@@ -30,11 +34,11 @@ function HomeWhy(){
                     </div>
                 </div>
                 <div className="content-left">
-                    <div className="card-content card-content-1">
+                    <div className="card-content card-content-1" data-aos="flip-right" data-aos-duration="400">
                         <h4>Eat More Healthfully</h4>
                         <p>Obtaining the recommended daily fruits and vegetables</p>
                     </div>
-                    <div className="card-content card-content-2">
+                    <div className="card-content card-content-2" data-aos="flip-right" data-aos-duration="800">
                         <h4>Eat More Healthfully</h4>
                         <p>Obtaining the recommended daily fruits and vegetables</p>
                     </div>
@@ -50,11 +54,11 @@ function HomeWhy(){
                     </div>
                 </div>
                 <div className="content-right">
-                    <div className="card-content card-content-2">
+                    <div className="card-content card-content-2" data-aos="flip-left" data-aos-duration="600">
                         <h4>Eat More Healthfully</h4>
                         <p>Obtaining the recommended daily fruits and vegetables</p>
                     </div>
-                    <div className="card-content card-content-1">
+                    <div className="card-content card-content-1" data-aos="flip-left" data-aos-duration="1000">
                         <h4>Eat More Healthfully</h4>
                         <p>Obtaining the recommended daily fruits and vegetables</p>
                     </div>

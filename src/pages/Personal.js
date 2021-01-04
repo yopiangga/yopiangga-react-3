@@ -10,7 +10,7 @@ import Footer from '../component/all/Footer';
 
 export default function Personal(){
     return(
-    <body>
+    <div>
         <NavSearch />
         <Nav />
         <NavMobile />
@@ -18,6 +18,6 @@ export default function Personal(){
         <PersonalAddress />
         <Subscribe />
         <Footer />
-    </body>
+    </div>
     );
 }

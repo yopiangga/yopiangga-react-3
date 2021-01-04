@@ -29,7 +29,7 @@ function meLinkedin(){
 
 export default function TestimonialClient(){
     return(
-    <section className="testimonials-client" onclick={btnMenuDown}>
+    <section className="testimonials-client" onClick={btnMenuDown}>
         <div className="content">
             <div className="title">
                 <h2>The client said</h2>

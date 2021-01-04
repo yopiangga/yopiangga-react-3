@@ -3,8 +3,12 @@ import blog1 from '../../assets/images/blog-1.png';
 import blog2 from '../../assets/images/blog-2.png';
 import blog3 from '../../assets/images/blog-3.png';
 
-import $ from 'jquery';
 import {NavLink} from 'react-router-dom';
+import $ from 'jquery';
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+Aos.init();
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');
@@ -15,7 +19,7 @@ function btnMenuDown(){
 function HomeBlog(){
     return (
 
-    <section className="home-blog" onclick={btnMenuDown}>
+    <section className="home-blog" onClick={btnMenuDown}>
         <div className="content">
             <div className="title">
                 <h2>FROM OUR BLOG</h2>
@@ -23,7 +27,7 @@ function HomeBlog(){
             </div>
             <div className="body">
                 <div className="blog-left">
-                    <div className="card-blog" >
+                    <div className="card-blog" data-aos="fade-up" data-aos-duration="400">
                         <div className="blog-img">
                             <div className="frame"></div>
                             <img src={blog1} alt="" />
@@ -40,7 +44,7 @@ function HomeBlog(){
                 </div>
 
                 <div className="blog-right">
-                    <div className="card-blog" >
+                    <div className="card-blog" data-aos="fade-up" data-aos-duration="600">
                         <div className="blog-img">
                             <img src={blog2} alt="" />
                         </div>
@@ -54,7 +58,7 @@ function HomeBlog(){
                         </div>
                     </div>      
 
-                    <div className="card-blog" >
+                    <div className="card-blog" data-aos="fade-up" data-aos-duration="800">
                         <div className="blog-img">
                             <img src={blog3} alt="" />
                         </div>

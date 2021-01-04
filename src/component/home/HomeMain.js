@@ -2,6 +2,10 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import {NavLink} from 'react-router-dom';
 
 import $ from 'jquery';
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+Aos.init();
 
 function btnMenuDown(){
     $('nav .content .menu').removeClass('active');
@@ -33,7 +37,7 @@ function HomeMain() {
                 <h6>PETIKDUA - 2020</h6>
                 <h2>FOOD STORE</h2>
                 <p>1 Organie product grown with love</p>
-                <NavLink exact to="/products"><button className="btn-shop">SHOP NOW</button></NavLink>
+                <NavLink exact to="/products"><button className="btn-shop" data-aos="fade-up" data-aos-duration="2000">SHOP NOW</button></NavLink>
             </div>
             <div className="icon-down">
                 <div className="circle animate__animated animate__bounce"></div>
@@ -44,7 +48,7 @@ function HomeMain() {
                 <h6>PETIKDUA - 2020</h6>
                 <h2>FOOD STORE</h2>
                 <p>2 Organie product grown with love</p>
-                <NavLink exact to="/products"><button className="btn-shop">SHOP NOW</button></NavLink>
+                <NavLink exact to="/products"><button className="btn-shop" data-aos="fade-up" data-aos-duration="2000">SHOP NOW</button></NavLink>
             </div>
             <div className="icon-down">
                 <div className="circle"></div>

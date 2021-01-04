@@ -11,7 +11,7 @@ import Footer from '../component/all/Footer';
 
 export default function ProductDetail(){
     return(
-    <body>
+    <div>
         <NavSearch />
         <Nav />
         <NavMobile />
@@ -20,6 +20,6 @@ export default function ProductDetail(){
         <ProductDetailRelated />
         <Subscribe />
         <Footer />
-    </body>
+    </div>
     );
 }

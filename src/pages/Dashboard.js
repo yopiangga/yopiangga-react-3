@@ -14,7 +14,7 @@ import Footer from '../component/all/Footer';
 
 export default function Dashboard(){
   return (
-    <body>
+    <div>
        <NavSearch />
        <Nav />
        <NavMobile />
@@ -25,7 +25,7 @@ export default function Dashboard(){
        <HomeBlog />
        <Subscribe />
        <Footer />
-    </body>
+    </div>
   )
 }
 

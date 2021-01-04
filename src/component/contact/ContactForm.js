@@ -26,7 +26,7 @@ function meLinkedin(){
 
 export default function ContactForm(){
     return(
-    <section className="contact-form" onclick={btnMenuDown}>
+    <section className="contact-form" onClick={btnMenuDown}>
         <div className="content">
             <div className="description">
                 <div className="address">
