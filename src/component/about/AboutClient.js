@@ -1,4 +1,6 @@
-import founder from '../../assets/images/founder.png';
+import user1 from '../../assets/images/user/user-1.png';
+import user2 from '../../assets/images/user/user-2.png';
+import user3 from '../../assets/images/user/user-3.png';
 import $ from 'jquery';
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -24,11 +26,11 @@ export default function AboutClient(){
                     </div>
                     <div className="regards" data-aos="fade-up" data-aos-duration="1000">
                         <div className="img">
-                            <img src={founder} alt="" />
+                            <img src={user1} alt="" />
                         </div>
                         <div className="name">
-                            <h3>ALFIAN PRISMA YOPIANGGA</h3>
-                            <h4>FOUNDER PETIKDUA</h4>
+                            <h3>KATE SMITH</h3>
+                            <h4>Client</h4>
                         </div>
                     </div>
                 </div>
@@ -39,11 +41,11 @@ export default function AboutClient(){
                     </div>
                     <div className="regards" data-aos="fade-up" data-aos-duration="1200">
                         <div className="img">
-                            <img src={founder} alt="" />
+                            <img src={user2} alt="" />
                         </div>
                         <div className="name">
-                            <h3>ALFIAN PRISMA YOPIANGGA</h3>
-                            <h4>FOUNDER PETIKDUA</h4>
+                            <h3>ANN MCMILLAN</h3>
+                            <h4>Client</h4>
                         </div>
                     </div>
                 </div>
@@ -54,11 +56,11 @@ export default function AboutClient(){
                     </div>
                     <div className="regards" data-aos="fade-up" data-aos-duration="1400">
                         <div className="img">
-                            <img src={founder} alt="" />
+                            <img src={user3} alt="" />
                         </div>
                         <div className="name">
-                            <h3>ALFIAN PRISMA YOPIANGGA</h3>
-                            <h4>FOUNDER PETIKDUA</h4>
+                            <h3>JAMES PETERSON</h3>
+                            <h4>Client</h4>
                         </div>
                     </div>
                 </div>

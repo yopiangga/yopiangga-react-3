@@ -1,6 +1,6 @@
 import { FiFacebook, FiInstagram, FiTwitter, FiLinkedin } from "react-icons/fi";
 
-import founder from '../../assets/images/founder.png';
+import founder from '../../assets/images/user/user-1.png';
 
 import $ from 'jquery';
 import {NavLink} from 'react-router-dom';
@@ -51,7 +51,7 @@ export default function TestimonialClient(){
                         </div>
                         <div className="name">
                             <h3 data-aos="fade-up" data-aos-duration="600">JANES PETERSON</h3>
-                            <h4 data-aos="fade-up" data-aos-duration="800">FOUNDER PETIKDUA</h4>
+                            <h4 data-aos="fade-up" data-aos-duration="800">FOUNDER SHOPFRUITS</h4>
                         </div>
                     </div>
                     <div className="media-sosial">

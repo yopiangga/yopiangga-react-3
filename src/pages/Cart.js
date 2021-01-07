@@ -9,7 +9,6 @@ import CartList from '../component/cart/CartList';
 import Subscribe from '../component/all/Subscribe';
 import Footer from '../component/all/Footer';
 
-document.title = "Cart - Petikdua Store";
 
 export default function Cart(){
     return(

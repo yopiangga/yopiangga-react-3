@@ -9,8 +9,6 @@ import CheckoutAddress from '../component/checkout/CheckoutAddress';
 import Subscribe from '../component/all/Subscribe';
 import Footer from '../component/all/Footer';
 
-document.title = "Check Out - Petikdua Store";
-
 export default function Checkout(){
     return(
         <div>

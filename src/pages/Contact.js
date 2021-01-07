@@ -8,7 +8,6 @@ import ContactForm from '../component/contact/ContactForm';
 import Subscribe from '../component/all/Subscribe';
 import Footer from '../component/all/Footer';
 
-document.title = "Contact - Petikdua Store";
 
 export default function Contact(){
     return(

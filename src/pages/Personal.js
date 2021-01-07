@@ -8,7 +8,6 @@ import PersonalAddress from '../component/personal/PersonalAddress';
 import Subscribe from '../component/all/Subscribe';
 import Footer from '../component/all/Footer';
 
-document.title = "Personal - Petikdua Store";
 
 export default function Personal(){
     return(

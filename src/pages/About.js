@@ -10,8 +10,6 @@ import Subscribe from '../component/all/Subscribe';
 import Footer from '../component/all/Footer';
 
 
-document.title = "About Us - Petikdua Store";
-
 export default function About(){
   return (
     <div>
