@@ -108,7 +108,7 @@ export default function BlogDetailHome(){
                         <div className="content-comment">
                             <div className="content-title">
                                 <h4>Yopiangga</h4>
-                                <h6>Desember 12, 2020</h6>
+                                <h6>Desember 29, 2020</h6>
                             </div>
                             <div className="content-text">
                                 <p>In addition to the above, which we might term as health benefits indirectly associated with organic food, the practices used in developing organic produce do make it healthier in direct terms too.</p>
@@ -123,8 +123,24 @@ export default function BlogDetailHome(){
                         </div>
                         <div className="content-comment">
                             <div className="content-title">
-                                <h4>Yopiangga</h4>
-                                <h6>Desember 12, 2020</h6>
+                                <h4>Zarff Regarzh</h4>
+                                <h6>Desember 27, 2020</h6>
+                            </div>
+                            <div className="content-text">
+                                <p>Capios persuadere in oenipons! Hercle, sensorem peritus!, bassus poeta! Solem de bi-color competition, gratia resistentia! Ubi est gratis silva?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="comment-1">
+                        <div className="img">
+                            <div className="circle">
+                                <img src={founder} alt="" />
+                            </div>
+                        </div>
+                        <div className="content-comment">
+                            <div className="content-title">
+                                <h4>Steppen Williem</h4>
+                                <h6>January 12, 2021</h6>
                             </div>
                             <div className="content-text">
                                 <p>In addition to the above, which we might term as health benefits indirectly associated with organic food, the practices used in developing organic produce do make it healthier in direct terms too.</p>
@@ -139,27 +155,11 @@ export default function BlogDetailHome(){
                         </div>
                         <div className="content-comment">
                             <div className="content-title">
-                                <h4>Yopiangga</h4>
-                                <h6>Desember 12, 2020</h6>
+                                <h4>Joon Peter Both</h4>
+                                <h6>January 04, 2021</h6>
                             </div>
                             <div className="content-text">
-                                <p>In addition to the above, which we might term as health benefits indirectly associated with organic food, the practices used in developing organic produce do make it healthier in direct terms too.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="comment-1">
-                        <div className="img">
-                            <div className="circle">
-                                <img src={founder} alt="" />
-                            </div>
-                        </div>
-                        <div className="content-comment">
-                            <div className="content-title">
-                                <h4>Yopiangga</h4>
-                                <h6>Desember 12, 2020</h6>
-                            </div>
-                            <div className="content-text">
-                                <p>In addition to the above, which we might term as health benefits indirectly associated with organic food, the practices used in developing organic produce do make it healthier in direct terms too.</p>
+                                <p>Nunquam transferre ignigena. Verpa noceres, tanquam festus zirbus. A falsis, barcas peritus calcaria. Humani generiss messis! Eheu, noster bubo! Cum musa credere, omnes lacteaes</p>
                             </div>
                         </div>
                     </div>

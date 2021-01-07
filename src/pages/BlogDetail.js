@@ -8,6 +8,8 @@ import BlogDetailHome from '../component/blogDetail/BlogDetailHome';
 import Subscribe from '../component/all/Subscribe';
 import Footer from '../component/all/Footer';
 
+document.title = "Blog Detail - Petikdua Store";
+
 export default function BlogDetail(){
     return(
     <div>

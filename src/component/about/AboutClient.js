@@ -20,7 +20,7 @@ export default function AboutClient(){
                 <div className="card-client">
                     <div className="review" data-aos="fade-up" data-aos-duration="400">
                         <span>"</span>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem voluptas, explicabo sint esse laborum ea omnis quibusdam harum recusandae. Dolorem aperiam nostrum hic est illum asperiore</p>
+                        <p>Guttuss sunt sagas de pius ionicis tormento. Sunt capioes acquirere brevis, mirabilis fluctuses. Regius, alter lapsuss semper. Mirabilis fraticinida patienter imperiums luna est.</p>
                     </div>
                     <div className="regards" data-aos="fade-up" data-aos-duration="1000">
                         <div className="img">
@@ -35,7 +35,7 @@ export default function AboutClient(){
                 <div className="card-client">
                     <div className="review" data-aos="fade-up" data-aos-duration="600">
                         <span>"</span>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem voluptas, explicabo sint esse laborum ea omnis quibusdam harum recusandae. Dolorem aperiam nostrum hic est illum asperiore</p>
+                        <p>Barbatus fortiss ducunt ad poeta. Orexis dexter domus est. Glos, fermium, et demissio. Altus, germanus sectams tandem experientia</p>
                     </div>
                     <div className="regards" data-aos="fade-up" data-aos-duration="1200">
                         <div className="img">
@@ -50,7 +50,7 @@ export default function AboutClient(){
                 <div className="card-client">
                     <div className="review" data-aos="fade-up" data-aos-duration="800">
                         <span>"</span>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem voluptas, explicabo sint esse laborum ea omnis quibusdam harum recusandae. Dolorem aperiam nostrum hic est illum asperiore</p>
+                        <p>Est primus usus, cesaris. Azureus, fortis coordinataes sapienter magicae de raptus, germanus bursa. Peritus, nobilis buxums sed. Mirabilis fraticinida patienter imperiums luna est.</p>
                     </div>
                     <div className="regards" data-aos="fade-up" data-aos-duration="1400">
                         <div className="img">

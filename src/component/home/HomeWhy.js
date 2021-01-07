@@ -39,8 +39,8 @@ function HomeWhy(){
                         <p>Obtaining the recommended daily fruits and vegetables</p>
                     </div>
                     <div className="card-content card-content-2" data-aos="flip-right" data-aos-duration="800">
-                        <h4>Eat More Healthfully</h4>
-                        <p>Obtaining the recommended daily fruits and vegetables</p>
+                        <h4>Best Quality</h4>
+                        <p>Best quality picked fruits and vegetables</p>
                     </div>
                 </div>
                 <div className="content-center desktop" id="desktop">
@@ -55,12 +55,12 @@ function HomeWhy(){
                 </div>
                 <div className="content-right">
                     <div className="card-content card-content-2" data-aos="flip-left" data-aos-duration="600">
-                        <h4>Eat More Healthfully</h4>
-                        <p>Obtaining the recommended daily fruits and vegetables</p>
+                        <h4>More Attractive Prices</h4>
+                        <p>We take it directly from the manufacturer, so we offer you the best price</p>
                     </div>
                     <div className="card-content card-content-1" data-aos="flip-left" data-aos-duration="1000">
-                        <h4>Eat More Healthfully</h4>
-                        <p>Obtaining the recommended daily fruits and vegetables</p>
+                        <h4>Professional Supplier</h4>
+                        <p>Our suppliers are very professional in their work</p>
                     </div>
                 </div>
             </div>

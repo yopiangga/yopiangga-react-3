@@ -25,7 +25,7 @@ function HomeCategory(){
                 <div className="title">
                     <h2>WELCOME TO PETIKDUA</h2>
                     <h6>- A food store -</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt reiciendis unde iste, harum, autem nam odit ipsum doloribus quae dolorum veritatis. Debitis quam quidem, amet praesentium dolorem velit recusandae.</p>
+                    <p>We are online food store industry organic farm delivering the best products that boost your daily life energy and potential.</p>
                 </div>
                 <div className="body">
                     <div className="category category-1" data-aos="fade-up" data-aos-duration="400">

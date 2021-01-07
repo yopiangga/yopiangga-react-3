@@ -20,8 +20,8 @@ export default function AboutStory(){
                         <h6>- Discover our beautiful farm -</h6>
                     </div>
                     <div className="body">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam blanditiis repudiandae ex laboriosam esse iste.</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam blanditiis repudiandae ex laboriosam esse iste. Vitae totam neque quis, repellat, ipsam magnam voluptate exercitationem, quaerat consectetur asperiores voluptates non quisquam?</p>
+                        <p>A falsis, historia primus gallus. Est bassus tabes, cesaris. Gallus de mirabilis agripeta, locus mens! Primus ratione Cur eleates accelerare? Heu. Ecce, superbus onus! Demolitione secundus homo est. Cum cacula congregabo, omnes coordinataees acquirere dexter, flavum galataees.</p>
+                        <p>Vae. Dexter fiscina aliquando vitares animalis est. Nunquam convertam bulla. Cum pars prarere, omnes seculaes</p>
                     </div>
                     <div className="regards">
                         <div className="img">

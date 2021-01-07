@@ -34,9 +34,10 @@ function HomeMain() {
         </div>
         <div className="slide slide-1 active">
             <div className="content">
-                <h6>PETIKDUA - 2020</h6>
-                <h2>FOOD STORE</h2>
-                <p>1 Organie product grown with love</p>
+                <h6>PETIKDUA - 2021</h6>
+                <h2>Get Organic Food</h2>
+                <p>With our wide variety of vegan & organic food products, 
+                    <br></br>we are sure to help you make the right choice to start your day.</p>
                 <NavLink exact to="/products"><button className="btn-shop" data-aos="fade-up" data-aos-duration="2000">SHOP NOW</button></NavLink>
             </div>
             <div className="icon-down">
@@ -45,9 +46,9 @@ function HomeMain() {
         </div>
         <div className="slide slide-2">
             <div className="content">
-                <h6>PETIKDUA - 2020</h6>
-                <h2>FOOD STORE</h2>
-                <p>2 Organie product grown with love</p>
+                <h6>PETIKDUA - 2021</h6>
+                <h2>Tasty Way to Healthier Life</h2>
+                <p>Our organic food contains all necessary elements and vitamins for your health.</p>
                 <NavLink exact to="/products"><button className="btn-shop" data-aos="fade-up" data-aos-duration="2000">SHOP NOW</button></NavLink>
             </div>
             <div className="icon-down">

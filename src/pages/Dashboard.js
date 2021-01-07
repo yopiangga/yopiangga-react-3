@@ -11,6 +11,7 @@ import HomeBlog from '../component/home/HomeBlog';
 import Subscribe from '../component/all/Subscribe';
 import Footer from '../component/all/Footer';
 
+document.title = "Dashboard - Petikdua Store";
 
 export default function Dashboard(){
   return (

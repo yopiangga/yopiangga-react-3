@@ -8,6 +8,7 @@ import ProductsProduct from '../component/products/ProductsProduct';
 import Subscribe from '../component/all/Subscribe';
 import Footer from '../component/all/Footer';
 
+document.title = "Products - Petikdua Store";
 
 export default function Products(){
   return (

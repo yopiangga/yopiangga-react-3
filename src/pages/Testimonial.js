@@ -8,6 +8,7 @@ import TestimonialClient from '../component/testimonial/TestimonialClient';
 import Subscribe from '../component/all/Subscribe';
 import Footer from '../component/all/Footer';
 
+document.title = "Testimonial - Petikdua Store";
 
 export default function Testimonial(){
   return (

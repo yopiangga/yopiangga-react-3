@@ -88,8 +88,8 @@ export default function ProductDetailHome(){
             <div className="right">
                 <h1>Fresh Natherlands Lecy</h1>
                 <h3>$15.00</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam necessitatibus unde natus amet reprehenderit ut error, atque eaque velit minima, porro consequuntur esse iure omnis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam necessitatibus unde natus amet reprehenderit ut error, atque eaque velit minima, porro consequuntur esse iure omnis labore nemo dolor laboriosam nisi.</p>
+                <p>Cur abaculus ire? Exsul secundus historia est. Hilotaes persuadere! Est teres exemplar, cesaris. Altus hydras ducunt ad repressor. Pol, animalis! Rationes sunt abactors de ferox ignigena. Nunquam imperium cannabis.</p>
+                <p> Hercle, magister audax!, hibrida! Accentors studere, tanquam mirabilis tumultumque. Vae, barbatus detrius!</p>
                 <form>
                     <div className="form-group">
                         <input type="text" placeholder="Quantity" />

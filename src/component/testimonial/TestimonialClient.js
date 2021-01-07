@@ -36,21 +36,21 @@ export default function TestimonialClient(){
     <section className="testimonials-client" onClick={btnMenuDown}>
         <div className="content">
             <div className="title">
-                <h2>The client said</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h2>What People Say</h2>
+                <p>We are online food store organic farm delivering the best products that boost your daily life energy and potential.</p>
             </div>
             <div className="body" data-aos="fade-up" data-aos-duration="400">
                 <div className="card-client">
                     <div className="review">
                         <span>"</span>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem voluptas, explicabo sint esse laborum ea omnis quibusdam harum recusandae. Dolorem aperiam nostrum hic est illum asperiore</p>
+                        <p>Classis de salvus cursus, convertam galatae! Terror peregrinationes, tanquam audax cedrium. Cum luna prarere, omnes cannabises resuscitabo. Classis de salvus cursus, convertam galatae! Terror peregrinationes, tanquam audax cedrium.</p>
                     </div>
                     <div className="regards">
                         <div className="img">
                             <img src={founder} alt="" />
                         </div>
                         <div className="name">
-                            <h3 data-aos="fade-up" data-aos-duration="600">ALFIAN PRISMA YOPIANGGA</h3>
+                            <h3 data-aos="fade-up" data-aos-duration="600">JANES PETERSON</h3>
                             <h4 data-aos="fade-up" data-aos-duration="800">FOUNDER PETIKDUA</h4>
                         </div>
                     </div>

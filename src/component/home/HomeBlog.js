@@ -49,8 +49,8 @@ function HomeBlog(){
                             <img src={blog2} alt="" />
                         </div>
                         <div className="blog-body">
-                            <h6>October 23, 2020</h6>
-                            <h3>Become Heart Healthy in 5 Steps</h3>
+                            <h6>November 23, 2020</h6>
+                            <h3>How to Make Your Breakfast Easy and Yummy</h3>
                             <p>Improving your diet lowers your risk for heart…</p>
                             <NavLink exact to="/blog-detail">
                                 <h4><a href="">READ MORE</a></h4>
@@ -63,8 +63,8 @@ function HomeBlog(){
                             <img src={blog3} alt="" />
                         </div>
                         <div className="blog-body">
-                            <h6>October 23, 2020</h6>
-                            <h3>Become Heart Healthy in 5 Steps</h3>
+                            <h6>December 23, 2020</h6>
+                            <h3>Breakfast Potatoes (Crispy + Tender)</h3>
                             <p>Improving your diet lowers your risk for heart…</p>
                             <NavLink exact to="/blog-detail">
                                 <h4><a href="">READ MORE</a></h4>

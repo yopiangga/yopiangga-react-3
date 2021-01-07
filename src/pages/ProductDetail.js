@@ -9,6 +9,8 @@ import ProductDetailRelated from '../component/productDetail/ProductDetailRelate
 import Subscribe from '../component/all/Subscribe';
 import Footer from '../component/all/Footer';
 
+document.title = "Product Detail - Petikdua Store";
+
 export default function ProductDetail(){
     return(
     <div>
